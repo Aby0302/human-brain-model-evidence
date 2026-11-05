@@ -9,6 +9,30 @@ walking policy. Experiment date: **November 5, 2026**.
 **This repository contains documentation and evidence media only. Project source
 code, training scripts, model weights, and raw brain data are not published.**
 
+## Running, stairs and recovery
+
+| New motor skill | Primary first-attempt result |
+| --- | --- |
+| Running | **40/48** |
+| Four physical 8 cm steps | **44/48** |
+| Getting up: supine and prone | **96/96** |
+
+[![Walking, falling, recovery and walking again — RETAILERWAY LLC](previews/continuous-fall-recovery.gif)](videos/continuous-fall-recovery.mp4)
+
+[Continuous fall-and-recovery video](videos/continuous-fall-recovery.mp4)
+· [Running](videos/running-with-activity.mp4)
+· [Stair ascent](videos/stairs-with-activity.mp4)
+· [Getting up](videos/recovery-with-activity.mp4)
+· [Full motor skill report](docs/motor-skills.md)
+· [Per-attempt results](metadata/motor-skills.json).
+
+The continuous episode contains **900 control steps with no pose rewrite or
+automatic reset**. An explicit external disturbance caused the fall.
+Across all retained native capture and primary conditions, running passed
+66/80 and stair ascent 58/64; the weaker capture batches remain included.
+These are simulator development gates, not general human-brain or hardware
+capability claims. All new recordings play at 1× speed.
+
 ## A fall and its synchronized regional activity
 
 [![Recorded fall and synchronized activity — RETAILERWAY LLC](previews/fall-activity.gif)](https://github.com/Aby0302/human-brain-model-evidence/releases/download/evidence-2026-11-05-en/fall-with-activity.mp4)
@@ -32,8 +56,8 @@ All published figures, videos, and GIFs carry the **RETAILERWAY LLC** stamp.
 | Final walking-policy evaluation | 3 evaluation seeds, 16 environments each, 20 s per environment | 1 fall across 960 aggregate simulation seconds; mean forward speed approximately 0.349 m/s against a 0.5 m/s target. |
 | Human EEG reference | 20 participants, 962 published trials | Actual Cz EEG aligned to support-surface perturbations, rather than robot impact or an emotion-labeled fall task. |
 
-Before the falls, regions receiving sensorimotor inputs differed from
-age-matched non-fall controls. The abrupt activity drop after a fall comes
+In the earlier learning study, regions receiving sensorimotor inputs differed from
+age-matched non-fall controls. In those learning captures, the abrupt activity drop after a fall comes
 from an **imposed software reset**. It cannot be interpreted as fear, pain,
 or another measured emotion.
 

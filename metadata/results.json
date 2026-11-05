@@ -160,5 +160,7 @@
   },
   "publication_brand": "RETAILERWAY LLC",
   "publication_language": "en",
-  "media_revision": "English annotations and company stamps; experiment results retained"
+  "media_revision": "English annotations and company stamps; experiment results retained",
+  "motor_skill_development_report": "docs/motor-skills.md",
+  "motor_skill_derived_results": "metadata/motor-skills.json"
 }

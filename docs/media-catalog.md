@@ -41,3 +41,17 @@ isolate the connectivity-informed model's independent contribution.
 [Downloadable release](https://github.com/Aby0302/human-brain-model-evidence/releases/tag/evidence-2026-11-05-en)
 · [SHA-256 and video properties](../metadata/media-manifest.json)
 · [Experiment report](experiment-report.md)
+
+
+## Motor skill recordings — RETAILERWAY LLC
+
+| Recording | Duration | Frame rate | Interpretation |
+| --- | --- | --- | --- |
+| [Running](../videos/running-with-activity.mp4) | 20 s | 50 fps | Saved-policy condition, visible body passes; batch 14/16 |
+| [Stairs](../videos/stairs-with-activity.mp4) | 20 s | 50 fps | Four 8 cm risers; visible body passes; batch 14/16 |
+| [Prone-to-standing](../videos/recovery-with-activity.mp4) | 16 s | 50 fps | 1 s settling + 15 s evaluation; batch 16/16 |
+| [Continuous fall recovery](../videos/continuous-fall-recovery.mp4) | 18 s | 50 fps | One externally disturbed integration episode; 0 resets |
+
+All four retain 1× timing and carry English labels and RETAILERWAY LLC branding.
+GIF excerpts: running seconds 4–10, stairs 1–7, recovery 1–7, continuous episode 2.5–7.5.
+[Methods, results and limitations](motor-skills.md).

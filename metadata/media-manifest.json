@@ -1,12 +1,10 @@
 {
   "publication_date": "2026-11-05",
-  "revision": "English labels and RETAILERWAY LLC branding",
+  "revision": "Motor skill development: running, physical stairs and continuous recovery",
   "language": "en",
   "branding": "RETAILERWAY LLC",
   "media_only": true,
   "code_or_model_weights_included": false,
-  "experiment_results_changed": false,
-  "frame_counts_and_playback_rates_preserved": true,
   "files": [
     {
       "file": "images/fall-activity.png",
@@ -200,6 +198,253 @@
       "playback_speed": 1.0,
       "source_kind": "saved_policy_reexecution",
       "presentation": "English overlays rebuilt from original recorded frames and measurements"
+    },
+    {
+      "file": "images/continuous-fall-recovery.png",
+      "bytes": 280971,
+      "sha256": "656e922c42bee2dc519a7e38b3c595b1fc8d858fa820f145c6ca3807e8304bd7",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "image": {
+        "width": 1920,
+        "height": 1280,
+        "frames": 1
+      }
+    },
+    {
+      "file": "images/recovery-frame.png",
+      "bytes": 97444,
+      "sha256": "dd84bf92e0352373c46a48c60fde71b39bc18a4c4cb75a53c46ed5df67acbbce",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "image": {
+        "width": 1440,
+        "height": 660,
+        "frames": 1
+      }
+    },
+    {
+      "file": "images/recovery-measurements.png",
+      "bytes": 218754,
+      "sha256": "3e7a88ec67223184c92a391b81509d81dc913be89fc80c396667afda58a87a36",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "image": {
+        "width": 1920,
+        "height": 1440,
+        "frames": 1
+      }
+    },
+    {
+      "file": "images/recovery-sequence.png",
+      "bytes": 259404,
+      "sha256": "2a1d88ff4b9d963a999b57f20a8eef9730a9d221082025fe4211f910d55833ea",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "image": {
+        "width": 1440,
+        "height": 756,
+        "frames": 1
+      }
+    },
+    {
+      "file": "images/running-frame.png",
+      "bytes": 92901,
+      "sha256": "31cc2dfb9831e3eb62cfa005193efeba0cac548cf04f7ba06c3a1dff69217c5b",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "image": {
+        "width": 1440,
+        "height": 660,
+        "frames": 1
+      }
+    },
+    {
+      "file": "images/running-measurements.png",
+      "bytes": 348795,
+      "sha256": "5ef8c5d119fd0e3dbfd13c492b4a0ad1888cc0de711a461ca22fe52250a441b5",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "image": {
+        "width": 1920,
+        "height": 1440,
+        "frames": 1
+      }
+    },
+    {
+      "file": "images/stairs-frame.png",
+      "bytes": 121471,
+      "sha256": "fe13366634e2589e310c2232c60eedab531d8b774423c2bf1e865cbc2347dc55",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "image": {
+        "width": 1440,
+        "height": 660,
+        "frames": 1
+      }
+    },
+    {
+      "file": "images/stairs-measurements.png",
+      "bytes": 235736,
+      "sha256": "bae9404024af85f5a125a130b88afb28258f0260901f5459097fb22d6ed391d4",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "image": {
+        "width": 1920,
+        "height": 1440,
+        "frames": 1
+      }
+    },
+    {
+      "file": "previews/continuous-fall-recovery.gif",
+      "bytes": 2968089,
+      "sha256": "5a0204faaf3d396b17edbdd4fee1cc4fe3479c90bab5deeebb00c64e421cdf1f",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "image": {
+        "width": 720,
+        "height": 510,
+        "frames": 50,
+        "duration_ms": 5000
+      }
+    },
+    {
+      "file": "previews/recovery.gif",
+      "bytes": 842203,
+      "sha256": "cc440e7db4ea78be179d2f99fc37b112f880dd134a49940ac5534bff5abb424f",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "image": {
+        "width": 960,
+        "height": 440,
+        "frames": 60,
+        "duration_ms": 6000
+      }
+    },
+    {
+      "file": "previews/running.gif",
+      "bytes": 1129917,
+      "sha256": "f0bfc04dd415234cd5214d4493b68d2c049169d31cb9e4df14d04f7af5e44ba6",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "image": {
+        "width": 960,
+        "height": 440,
+        "frames": 60,
+        "duration_ms": 6000
+      }
+    },
+    {
+      "file": "previews/stairs.gif",
+      "bytes": 1607730,
+      "sha256": "d273b8e5c1c372a8a487bdeebf15bd6d4e1909b721b4d4560117e9dcf836fb13",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "image": {
+        "width": 960,
+        "height": 440,
+        "frames": 60,
+        "duration_ms": 6000
+      }
+    },
+    {
+      "file": "videos/continuous-fall-recovery.mp4",
+      "bytes": 1215980,
+      "sha256": "37d1727ec2aadc901acb0365c9bb0c0c972216f96d5337b4d0bb6c2234206deb",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "video": {
+        "codec_name": "h264",
+        "width": 960,
+        "height": 680,
+        "avg_frame_rate": "50/1",
+        "nb_read_frames": "900",
+        "duration_s": 18.0
+      },
+      "full_decode_passed": true,
+      "playback_speed": 1.0,
+      "source_kind": "continuous_skill_bank_integration",
+      "source_video_sha256": "46ca4377888da4f0ce51d9541a7851cf53185a9a8de2646e23bd5fad6ea5f57d",
+      "source_telemetry_sha256": "8b21a643fbff994841460c4fd4015d92cfd1d7ad4d6ff6796d3e62929c7a3ab6",
+      "automatic_resets": 0
+    },
+    {
+      "file": "videos/recovery-with-activity.mp4",
+      "bytes": 830001,
+      "sha256": "9162edab565608b82444d6ef5f70b4a62b62021c07f4fce47829536fe389e1de",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "video": {
+        "codec_name": "h264",
+        "width": 1440,
+        "height": 660,
+        "avg_frame_rate": "50/1",
+        "nb_read_frames": "800",
+        "duration_s": 16.0
+      },
+      "full_decode_passed": true,
+      "playback_speed": 1.0,
+      "source_kind": "saved_policy_held_out_physics_replay",
+      "source_video_sha256": "859bb11798bf75e37d06db7429eb9728628687819edd7630bfbea85df69d09fc",
+      "source_telemetry_sha256": "7e0fbe10a12be91a0d6b2464a25a2320933fdd0580d4d8e4eaf548b167adcdcb",
+      "source_checkpoint_sha256": "5637e3401a94a10454cffee1b0ed01c735e2dfdad99ba3eb316643a52faf709d",
+      "seed": 47,
+      "environment": 0,
+      "visible_body_success": true,
+      "whole_batch_success_rate": 1.0
+    },
+    {
+      "file": "videos/running-with-activity.mp4",
+      "bytes": 1450111,
+      "sha256": "ce257970bc61ae785dfa08f38000f9d425b7f3c0eb5f6341973ff79ce37a439b",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "video": {
+        "codec_name": "h264",
+        "width": 1440,
+        "height": 660,
+        "avg_frame_rate": "50/1",
+        "nb_read_frames": "1000",
+        "duration_s": 20.0
+      },
+      "full_decode_passed": true,
+      "playback_speed": 1.0,
+      "source_kind": "saved_policy_held_out_physics_replay",
+      "source_video_sha256": "12d765e59ac61ba222cca5b7f765479183ceee88a660c1d27415d271a3274840",
+      "source_telemetry_sha256": "94b8b882d70831130ac5b993e060682a06be926d26417911f89b73c7aa95acd4",
+      "source_checkpoint_sha256": "62700823644835a11bf01718dabcc662d6d5590979582092117e973902b42e00",
+      "seed": 97,
+      "environment": 6,
+      "visible_body_success": true,
+      "whole_batch_success_rate": 0.875
+    },
+    {
+      "file": "videos/stairs-with-activity.mp4",
+      "bytes": 1027855,
+      "sha256": "8d439f0f7c10b9db2f1a7e514a548c76cb5e57135f804545673b84a8e5e87e15",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "video": {
+        "codec_name": "h264",
+        "width": 1440,
+        "height": 660,
+        "avg_frame_rate": "50/1",
+        "nb_read_frames": "1000",
+        "duration_s": 20.0
+      },
+      "full_decode_passed": true,
+      "playback_speed": 1.0,
+      "source_kind": "saved_policy_held_out_physics_replay",
+      "source_video_sha256": "b874cec635e82c8bab2ff7688ec844197dacb145d2b57c19815ea658bc5565bc",
+      "source_telemetry_sha256": "c9f5890a458ee11fdad5a11807a949ae3cfd0733f9f7199744c206bb26a3b75e",
+      "source_checkpoint_sha256": "0c01268e81c91297ab3b07dc8c731c69da1f181215916ae0ee10dba505cea75a",
+      "seed": 47,
+      "environment": 6,
+      "visible_body_success": true,
+      "whole_batch_success_rate": 0.875
     }
-  ]
+  ],
+  "new_experiments_added": true,
+  "prior_experiment_results_preserved": true,
+  "new_video_timing": "1x; all captured native frames retained"
 }
