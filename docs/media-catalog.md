@@ -2,6 +2,20 @@
 
 **RETAILERWAY LLC** · All current media use English labels and company stamps.
 
+## Articulated human experiment — November 6
+
+| Recording | Duration / speed | Interpretation |
+| --- | --- | --- |
+| [Human walking prototype](../videos/human-walking-prototype.mp4) | 16 s; 30 fps; 1× | Actuator-only saved-policy replay, seed 47 body 0; full attempt FAIL |
+| [Human recovery prototype](../videos/human-recovery-prototype.mp4) | 16 s; 30 fps; 1× | Actual settling and attempted getup, no resets/pose writes; FAIL |
+| [Authored getup target](../videos/human-getup-reference.mp4) | 11 s; 30 fps; 1× | Prescribed poses, NOT learned physics or motion capture |
+
+The first two pair actual frames with the same body's physical measurements
+and regional E/I activity at each control step. Their GIF previews show
+seconds 1–9 at 1×, with rounded GIF delays. The reference preview is labeled
+separately. [Results and limits](human-motion.md) ·
+[Derived numerical summaries](../metadata/human-motion.json).
+
 ## Actual falls during learning
 
 | File | Duration / speed | Provenance |

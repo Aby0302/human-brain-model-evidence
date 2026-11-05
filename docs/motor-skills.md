@@ -7,6 +7,12 @@ ascending a staircase and getting up from the floor. Training used NVIDIA
 Isaac Lab / Newton. The fixed 360-region HCP features remain available to
 the motor policies; the connectivity matrix itself was not trained.
 
+**Anatomical clarification — November 6:** these results describe a robot.
+The G1 asset has a fixed head joint and disabled self-collisions. The earlier
+96/96 recovery result verifies its standing task, not natural human recovery
+or neck safety. The [articulated human experiment](human-motion.md) is a
+separate development branch with explicit head/neck measurements.
+
 | Skill | Primary first attempts | Additional native video conditions |
 | --- | --- | --- |
 | Running | 40/48 (83.3%) | 12/16 and 14/16; total 66/80 (82.5%) |

@@ -41,3 +41,23 @@
 Citing these sources does not establish human-like consciousness, emotion,
 or a validated whole-brain model. Third-party software, raw datasets, and robot
 asset files are not included in the repository.
+
+## Articulated human motion experiment — November 6
+
+- [MimicKit human research asset](https://github.com/xbpeng/MimicKit/blob/fbe1a36e878f036d6bf5521defb8eb3b8ab4170d/data/assets/humanoid/humanoid.xml),
+  revision fbe1a36e878f036d6bf5521defb8eb3b8ab4170d, Apache-2.0 repository.
+  Its original 28 hinge coordinates were retained, including three neck
+  and three abdomen coordinates. This is a research character, not a
+  clinically validated human musculoskeletal or injury model.
+- [DeepMimic](https://github.com/xbpeng/DeepMimic), MIT repository;
+  [walking reference](https://github.com/xbpeng/DeepMimic/blob/master/data/motions/humanoid3d_walk.txt).
+  Source notices remain with the private input archive. Walking was
+  retargeted with coordinate-basis and landmark checks. The staged
+  recovery reference was authored locally and is **not motion capture**.
+- [DeepMimic primary project](https://xbpeng.github.io/projects/DeepMimic/index.html)
+  describes reference-based physical skill learning. Citing it does not
+  mean this experiment reproduces its reported results.
+
+Third-party asset files, raw reference motions and trained actors are not
+distributed here. RETAILERWAY LLC identifies the experiment and presentation;
+third-party rights and credits remain with their respective authors.

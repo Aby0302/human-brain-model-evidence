@@ -1,0 +1,4601 @@
+{
+  "company": "RETAILERWAY LLC",
+  "language": "en",
+  "experiment_dates": [
+    "2026-11-05",
+    "2026-11-06"
+  ],
+  "status": "experimental; no qualified natural human walking or recovery",
+  "body": {
+    "kind": "articulated human research character",
+    "actuated_hinges": 28,
+    "neck_axes": 3,
+    "abdomen_axes": 3,
+    "self_collisions": true,
+    "root_actuated": false,
+    "clinical_injury_validated": false
+  },
+  "observer": {
+    "fixed_HCP_regions": 360,
+    "actor_inputs": 491,
+    "motor_outputs": 28,
+    "EEG_or_emotional_equivalence_validated": false
+  },
+  "training": [
+    {
+      "motion": "walk",
+      "num_envs": 512,
+      "seed": 7,
+      "actual_updates": 1400,
+      "environment_steps": 17203200,
+      "checkpoint_sha256": "f1928f97f43af600a5f5843fb5ab72a63b09655a2b833345fd9e41041b121ae0",
+      "warm_start_checkpoint_sha256": "c93ae0d7c370bafd7847732f33429a29f0a2adb7747a7cc2802fc7b2130f48e7"
+    },
+    {
+      "motion": "staged_prone",
+      "num_envs": 512,
+      "seed": 7,
+      "actual_updates": 1800,
+      "environment_steps": 22118400,
+      "checkpoint_sha256": "30996e88f9cf0d357aac76554808f4126b2788c94e4cd6838ec432644a231a1e",
+      "warm_start_checkpoint_sha256": "09498b6c9b9293af5dfedc2e8a746bc7a67096b0328768bcdf26c2a36e0f1d59"
+    }
+  ],
+  "cohorts": [
+    {
+      "motion": "walk",
+      "reference_description": "Attributed DeepMimic walking reference",
+      "seed": 47,
+      "num_envs": 16,
+      "steps": 480,
+      "settling_steps": 30,
+      "dt": 0.03333333333333333,
+      "checkpoint_sha256": "f1928f97f43af600a5f5843fb5ab72a63b09655a2b833345fd9e41041b121ae0",
+      "checkpoint_training_velocity_convention": "pre-review: origin reference written as pelvis COM velocity",
+      "telemetry_sha256": "79847fadbb084318e83a61be033c927f24c993f6b1cca09c30eca249a1a8b0b9",
+      "success_rate": 0.0,
+      "model_screen": {
+        "passed": true,
+        "reasons": [],
+        "clinical_injury_validated": false
+      },
+      "per_environment": [
+        {
+          "body": 0,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.24699915945529938,
+            "single_foot_support_fraction": [
+              0.45384615384615384,
+              0.23076923076923078
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.030278733000159264,
+            "maximum_neck_speed_rad_s": 2.524883508682251,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.24699915945529938,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.40861088037490845,
+          "root_tracking_rmse_m": 3.684990882873535,
+          "root_orientation_tracking_rmse_deg": 83.52671226797354,
+          "maximum_root_orientation_tracking_error_deg": 149.0842914642637,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.000000238418579,
+            "maximum_neck_acceleration_rad_s2": 68.17286682128906,
+            "rms_joint_jerk_rad_s3": 824.5164184570312,
+            "actuator_saturation_fraction": 0.007301587301587302,
+            "maximum_actuator_torque_nm": 200.0,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 1,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.10416200011968613,
+            "single_foot_support_fraction": [
+              0.44871794871794873,
+              0.21794871794871795
+            ]
+          },
+          "screening": {
+            "passed": true,
+            "reasons": [],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.014110863208770752,
+            "maximum_neck_speed_rad_s": 2.7273340225219727,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.10416200011968613,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.40693455934524536,
+          "root_tracking_rmse_m": 4.426136493682861,
+          "root_orientation_tracking_rmse_deg": 90.96743393666627,
+          "maximum_root_orientation_tracking_error_deg": 179.57649643818988,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.000000238418579,
+            "maximum_neck_acceleration_rad_s2": 73.92434692382812,
+            "rms_joint_jerk_rad_s3": 850.6195678710938,
+            "actuator_saturation_fraction": 0.006190476190476191,
+            "maximum_actuator_torque_nm": 200.0,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 2,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.0664244219660759,
+            "single_foot_support_fraction": [
+              0.45384615384615384,
+              0.26153846153846155
+            ]
+          },
+          "screening": {
+            "passed": true,
+            "reasons": [],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.015250802040100098,
+            "maximum_neck_speed_rad_s": 2.378964900970459,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.0664244219660759,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4085654616355896,
+          "root_tracking_rmse_m": 3.699761152267456,
+          "root_orientation_tracking_rmse_deg": 88.62264854125519,
+          "maximum_root_orientation_tracking_error_deg": 151.83401165906514,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.000000238418579,
+            "maximum_neck_acceleration_rad_s2": 64.91424560546875,
+            "rms_joint_jerk_rad_s3": 832.08349609375,
+            "actuator_saturation_fraction": 0.0044444444444444444,
+            "maximum_actuator_torque_nm": 200.0,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 3,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.20738819241523743,
+            "single_foot_support_fraction": [
+              0.4307692307692308,
+              0.258974358974359
+            ]
+          },
+          "screening": {
+            "passed": true,
+            "reasons": [],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.011834061704576015,
+            "maximum_neck_speed_rad_s": 2.1524760723114014,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.20738819241523743,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.40971431136131287,
+          "root_tracking_rmse_m": 3.4364631175994873,
+          "root_orientation_tracking_rmse_deg": 79.3463902618911,
+          "maximum_root_orientation_tracking_error_deg": 141.74346375425495,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.000000238418579,
+            "maximum_neck_acceleration_rad_s2": 60.68388748168945,
+            "rms_joint_jerk_rad_s3": 826.543212890625,
+            "actuator_saturation_fraction": 0.005079365079365079,
+            "maximum_actuator_torque_nm": 200.0,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 4,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.20073507726192474,
+            "single_foot_support_fraction": [
+              0.4282051282051282,
+              0.2692307692307692
+            ]
+          },
+          "screening": {
+            "passed": true,
+            "reasons": [],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.011863873340189457,
+            "maximum_neck_speed_rad_s": 2.5716168880462646,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.20073507726192474,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4075428247451782,
+          "root_tracking_rmse_m": 3.510854482650757,
+          "root_orientation_tracking_rmse_deg": 76.85282823750256,
+          "maximum_root_orientation_tracking_error_deg": 160.42358492374424,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.000000238418579,
+            "maximum_neck_acceleration_rad_s2": 69.94358825683594,
+            "rms_joint_jerk_rad_s3": 842.909912109375,
+            "actuator_saturation_fraction": 0.005238095238095238,
+            "maximum_actuator_torque_nm": 200.0,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 5,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.5118775367736816,
+            "single_foot_support_fraction": [
+              0.45384615384615384,
+              0.25384615384615383
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.030321121215820312,
+            "maximum_neck_speed_rad_s": 2.653289556503296,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.5118775367736816,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4113897979259491,
+          "root_tracking_rmse_m": 2.672558307647705,
+          "root_orientation_tracking_rmse_deg": 54.69543190048794,
+          "maximum_root_orientation_tracking_error_deg": 99.48007628262981,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.000000238418579,
+            "maximum_neck_acceleration_rad_s2": 70.08756256103516,
+            "rms_joint_jerk_rad_s3": 795.2108154296875,
+            "actuator_saturation_fraction": 0.005,
+            "maximum_actuator_torque_nm": 200.0,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 6,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.5422582030296326,
+            "single_foot_support_fraction": [
+              0.4307692307692308,
+              0.2641025641025641
+            ]
+          },
+          "screening": {
+            "passed": true,
+            "reasons": [],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.012047850526869297,
+            "maximum_neck_speed_rad_s": 2.86834716796875,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.5422582030296326,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4095410108566284,
+          "root_tracking_rmse_m": 2.4752328395843506,
+          "root_orientation_tracking_rmse_deg": 49.38946017764907,
+          "maximum_root_orientation_tracking_error_deg": 110.11988544940183,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.0,
+            "maximum_neck_acceleration_rad_s2": 65.89631652832031,
+            "rms_joint_jerk_rad_s3": 802.3892211914062,
+            "actuator_saturation_fraction": 0.005396825396825397,
+            "maximum_actuator_torque_nm": 200.0,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 7,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.820843517780304,
+            "single_foot_support_fraction": [
+              0.4461538461538462,
+              0.25384615384615383
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad",
+              "measured neck speed exceeds3rad/s development cap"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.024901092052459717,
+            "maximum_neck_speed_rad_s": 3.3302836418151855,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.820843517780304,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4101063013076782,
+          "root_tracking_rmse_m": 1.396431803703308,
+          "root_orientation_tracking_rmse_deg": 37.8143253652249,
+          "maximum_root_orientation_tracking_error_deg": 76.72752232204756,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.000000238418579,
+            "maximum_neck_acceleration_rad_s2": 81.7824478149414,
+            "rms_joint_jerk_rad_s3": 811.3444213867188,
+            "actuator_saturation_fraction": 0.005555555555555556,
+            "maximum_actuator_torque_nm": 200.0,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 8,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.21393358707427979,
+            "single_foot_support_fraction": [
+              0.4307692307692308,
+              0.2358974358974359
+            ]
+          },
+          "screening": {
+            "passed": true,
+            "reasons": [],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.013221058994531631,
+            "maximum_neck_speed_rad_s": 2.9945664405822754,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.21393358707427979,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4105749726295471,
+          "root_tracking_rmse_m": 3.214386224746704,
+          "root_orientation_tracking_rmse_deg": 79.42612102699552,
+          "maximum_root_orientation_tracking_error_deg": 132.1551780204969,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.000000238418579,
+            "maximum_neck_acceleration_rad_s2": 64.45453643798828,
+            "rms_joint_jerk_rad_s3": 828.8370971679688,
+            "actuator_saturation_fraction": 0.004920634920634921,
+            "maximum_actuator_torque_nm": 200.0,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 9,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": -0.11066931486129761,
+            "single_foot_support_fraction": [
+              0.4256410256410256,
+              0.26153846153846155
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured neck speed exceeds3rad/s development cap"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.013739466667175293,
+            "maximum_neck_speed_rad_s": 3.2949538230895996,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": -0.11066931486129761,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4118405282497406,
+          "root_tracking_rmse_m": 3.9539663791656494,
+          "root_orientation_tracking_rmse_deg": 120.15392328472043,
+          "maximum_root_orientation_tracking_error_deg": 179.90272141880035,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.000000238418579,
+            "maximum_neck_acceleration_rad_s2": 79.76956176757812,
+            "rms_joint_jerk_rad_s3": 816.4700317382812,
+            "actuator_saturation_fraction": 0.00626984126984127,
+            "maximum_actuator_torque_nm": 197.0785369873047,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 10,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.21748091280460358,
+            "single_foot_support_fraction": [
+              0.4307692307692308,
+              0.2282051282051282
+            ]
+          },
+          "screening": {
+            "passed": true,
+            "reasons": [],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.018779218196868896,
+            "maximum_neck_speed_rad_s": 2.233184814453125,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.21748091280460358,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4073964059352875,
+          "root_tracking_rmse_m": 3.1824285984039307,
+          "root_orientation_tracking_rmse_deg": 81.59739983379947,
+          "maximum_root_orientation_tracking_error_deg": 145.91849638856965,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.000000238418579,
+            "maximum_neck_acceleration_rad_s2": 61.74855422973633,
+            "rms_joint_jerk_rad_s3": 817.5116577148438,
+            "actuator_saturation_fraction": 0.00626984126984127,
+            "maximum_actuator_torque_nm": 200.0,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 11,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.5437160134315491,
+            "single_foot_support_fraction": [
+              0.4717948717948718,
+              0.26153846153846155
+            ]
+          },
+          "screening": {
+            "passed": true,
+            "reasons": [],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.012379327788949013,
+            "maximum_neck_speed_rad_s": 2.479285478591919,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.5437160134315491,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4122861325740814,
+          "root_tracking_rmse_m": 2.531261682510376,
+          "root_orientation_tracking_rmse_deg": 55.89780574894558,
+          "maximum_root_orientation_tracking_error_deg": 109.13373603585553,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.000000238418579,
+            "maximum_neck_acceleration_rad_s2": 59.37186050415039,
+            "rms_joint_jerk_rad_s3": 793.6985473632812,
+            "actuator_saturation_fraction": 0.004206349206349207,
+            "maximum_actuator_torque_nm": 200.0,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 12,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.0018684729002416134,
+            "single_foot_support_fraction": [
+              0.44871794871794873,
+              0.2230769230769231
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.027736365795135498,
+            "maximum_neck_speed_rad_s": 2.4375720024108887,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.0018684729002416134,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4114127457141876,
+          "root_tracking_rmse_m": 5.10167932510376,
+          "root_orientation_tracking_rmse_deg": 91.64679326310582,
+          "maximum_root_orientation_tracking_error_deg": 136.7922611065597,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.000000238418579,
+            "maximum_neck_acceleration_rad_s2": 65.89847564697266,
+            "rms_joint_jerk_rad_s3": 819.454345703125,
+            "actuator_saturation_fraction": 0.004285714285714286,
+            "maximum_actuator_torque_nm": 199.80291748046875,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 13,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.26692691445350647,
+            "single_foot_support_fraction": [
+              0.4025641025641026,
+              0.258974358974359
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.021032603457570076,
+            "maximum_neck_speed_rad_s": 2.432352066040039,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.26692691445350647,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.41103899478912354,
+          "root_tracking_rmse_m": 4.060850620269775,
+          "root_orientation_tracking_rmse_deg": 75.6062686935765,
+          "maximum_root_orientation_tracking_error_deg": 130.20828829274558,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.000000238418579,
+            "maximum_neck_acceleration_rad_s2": 64.39582061767578,
+            "rms_joint_jerk_rad_s3": 810.125,
+            "actuator_saturation_fraction": 0.004523809523809524,
+            "maximum_actuator_torque_nm": 186.61602783203125,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 14,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.3335282504558563,
+            "single_foot_support_fraction": [
+              0.4512820512820513,
+              0.24615384615384617
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.02206489071249962,
+            "maximum_neck_speed_rad_s": 2.172023296356201,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.3335282504558563,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4103795886039734,
+          "root_tracking_rmse_m": 3.410628318786621,
+          "root_orientation_tracking_rmse_deg": 73.36445098744011,
+          "maximum_root_orientation_tracking_error_deg": 125.4935104813185,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.0,
+            "maximum_neck_acceleration_rad_s2": 57.74128341674805,
+            "rms_joint_jerk_rad_s3": 817.7500610351562,
+            "actuator_saturation_fraction": 0.005555555555555556,
+            "maximum_actuator_torque_nm": 175.545654296875,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 15,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.5431298017501831,
+            "single_foot_support_fraction": [
+              0.4512820512820513,
+              0.23076923076923078
+            ]
+          },
+          "screening": {
+            "passed": true,
+            "reasons": [],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.014012813568115234,
+            "maximum_neck_speed_rad_s": 2.4376654624938965,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.5431298017501831,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.41019976139068604,
+          "root_tracking_rmse_m": 1.9506694078445435,
+          "root_orientation_tracking_rmse_deg": 54.32307041617692,
+          "maximum_root_orientation_tracking_error_deg": 104.04485810871067,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.000000238418579,
+            "maximum_neck_acceleration_rad_s2": 65.10842895507812,
+            "rms_joint_jerk_rad_s3": 812.6519165039062,
+            "actuator_saturation_fraction": 0.004126984126984127,
+            "maximum_actuator_torque_nm": 200.0,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        }
+      ],
+      "automatic_resets": 0,
+      "pose_writes_after_initial_reset": false,
+      "clinical_injury_validated": false
+    },
+    {
+      "motion": "walk",
+      "reference_description": "Attributed DeepMimic walking reference",
+      "seed": 97,
+      "num_envs": 16,
+      "steps": 480,
+      "settling_steps": 30,
+      "dt": 0.03333333333333333,
+      "checkpoint_sha256": "f1928f97f43af600a5f5843fb5ab72a63b09655a2b833345fd9e41041b121ae0",
+      "checkpoint_training_velocity_convention": "pre-review: origin reference written as pelvis COM velocity",
+      "telemetry_sha256": "9fe4e68b02a7ddab046cc4fad5b8dc21111cd3b87a5bb08afe42c33e30bd0711",
+      "success_rate": 0.0,
+      "model_screen": {
+        "passed": true,
+        "reasons": [],
+        "clinical_injury_validated": false
+      },
+      "per_environment": [
+        {
+          "body": 0,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": -0.0007353562396019697,
+            "single_foot_support_fraction": [
+              0.4076923076923077,
+              0.25384615384615383
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.020836591720581055,
+            "maximum_neck_speed_rad_s": 2.727842092514038,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": -0.0007353562396019697,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4077766537666321,
+          "root_tracking_rmse_m": 3.9266886711120605,
+          "root_orientation_tracking_rmse_deg": 102.90458648535864,
+          "maximum_root_orientation_tracking_error_deg": 179.6641268526001,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.000000238418579,
+            "maximum_neck_acceleration_rad_s2": 72.19606018066406,
+            "rms_joint_jerk_rad_s3": 822.032470703125,
+            "actuator_saturation_fraction": 0.00753968253968254,
+            "maximum_actuator_torque_nm": 200.0,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 1,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.5660623908042908,
+            "single_foot_support_fraction": [
+              0.4512820512820513,
+              0.2564102564102564
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.02291005849838257,
+            "maximum_neck_speed_rad_s": 2.593066930770874,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.5660623908042908,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4111117422580719,
+          "root_tracking_rmse_m": 3.193855047225952,
+          "root_orientation_tracking_rmse_deg": 57.61393351034775,
+          "maximum_root_orientation_tracking_error_deg": 102.95603411559345,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.000000238418579,
+            "maximum_neck_acceleration_rad_s2": 69.95742797851562,
+            "rms_joint_jerk_rad_s3": 829.2630004882812,
+            "actuator_saturation_fraction": 0.0044444444444444444,
+            "maximum_actuator_torque_nm": 189.11642456054688,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 2,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.7434191703796387,
+            "single_foot_support_fraction": [
+              0.43333333333333335,
+              0.2692307692307692
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.022861063480377197,
+            "maximum_neck_speed_rad_s": 2.847283124923706,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.7434191703796387,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.41097304224967957,
+          "root_tracking_rmse_m": 1.1775928735733032,
+          "root_orientation_tracking_rmse_deg": 39.27326521348479,
+          "maximum_root_orientation_tracking_error_deg": 82.00764748850375,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.000000238418579,
+            "maximum_neck_acceleration_rad_s2": 78.13678741455078,
+            "rms_joint_jerk_rad_s3": 834.8521728515625,
+            "actuator_saturation_fraction": 0.006031746031746032,
+            "maximum_actuator_torque_nm": 200.0,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 3,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.36596164107322693,
+            "single_foot_support_fraction": [
+              0.4717948717948718,
+              0.2743589743589744
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.02276170253753662,
+            "maximum_neck_speed_rad_s": 2.9361345767974854,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.36596164107322693,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.41364187002182007,
+          "root_tracking_rmse_m": 3.440638542175293,
+          "root_orientation_tracking_rmse_deg": 71.7770174670095,
+          "maximum_root_orientation_tracking_error_deg": 134.4423833363322,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.000000238418579,
+            "maximum_neck_acceleration_rad_s2": 82.15357971191406,
+            "rms_joint_jerk_rad_s3": 803.5399169921875,
+            "actuator_saturation_fraction": 0.005555555555555556,
+            "maximum_actuator_torque_nm": 200.0,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 4,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": -0.16083869338035583,
+            "single_foot_support_fraction": [
+              0.4846153846153846,
+              0.26666666666666666
+            ]
+          },
+          "screening": {
+            "passed": true,
+            "reasons": [],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.011708438396453857,
+            "maximum_neck_speed_rad_s": 2.479231357574463,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": -0.16083869338035583,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.40828582644462585,
+          "root_tracking_rmse_m": 4.3642354011535645,
+          "root_orientation_tracking_rmse_deg": 116.69819806730199,
+          "maximum_root_orientation_tracking_error_deg": 179.59487689454872,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.000000238418579,
+            "maximum_neck_acceleration_rad_s2": 66.78026580810547,
+            "rms_joint_jerk_rad_s3": 829.912109375,
+            "actuator_saturation_fraction": 0.0057936507936507935,
+            "maximum_actuator_torque_nm": 200.0,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 5,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.1673542559146881,
+            "single_foot_support_fraction": [
+              0.4205128205128205,
+              0.28717948717948716
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.026158452033996582,
+            "maximum_neck_speed_rad_s": 2.197762966156006,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.1673542559146881,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.41125258803367615,
+          "root_tracking_rmse_m": 3.483964443206787,
+          "root_orientation_tracking_rmse_deg": 85.24590393559906,
+          "maximum_root_orientation_tracking_error_deg": 143.53404625352246,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.000000238418579,
+            "maximum_neck_acceleration_rad_s2": 58.61475372314453,
+            "rms_joint_jerk_rad_s3": 823.4322509765625,
+            "actuator_saturation_fraction": 0.004603174603174603,
+            "maximum_actuator_torque_nm": 200.0,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 6,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": false,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.27947038412094116,
+            "single_foot_support_fraction": [
+              0.3564102564102564,
+              0.1564102564102564
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad",
+              "head is used as sustained support during active rise"
+            ],
+            "head_support_violation": true,
+            "longest_head_support_s": 0.9,
+            "maximum_limit_excursion_rad": 0.02067965269088745,
+            "maximum_neck_speed_rad_s": 2.8832736015319824,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.27947038412094116,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4029086232185364,
+          "root_tracking_rmse_m": 3.199295997619629,
+          "root_orientation_tracking_rmse_deg": 81.50089880165513,
+          "maximum_root_orientation_tracking_error_deg": 148.77841454996542,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.000000238418579,
+            "maximum_neck_acceleration_rad_s2": 99.65882110595703,
+            "rms_joint_jerk_rad_s3": 778.5440063476562,
+            "actuator_saturation_fraction": 0.006507936507936508,
+            "maximum_actuator_torque_nm": 200.0,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 7,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": -0.14393989741802216,
+            "single_foot_support_fraction": [
+              0.4358974358974359,
+              0.24102564102564103
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.022888123989105225,
+            "maximum_neck_speed_rad_s": 2.978581666946411,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": -0.14393989741802216,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4078274965286255,
+          "root_tracking_rmse_m": 4.181617736816406,
+          "root_orientation_tracking_rmse_deg": 110.70214245076943,
+          "maximum_root_orientation_tracking_error_deg": 179.94072616719404,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.000000238418579,
+            "maximum_neck_acceleration_rad_s2": 67.94839477539062,
+            "rms_joint_jerk_rad_s3": 845.5134887695312,
+            "actuator_saturation_fraction": 0.007301587301587302,
+            "maximum_actuator_torque_nm": 192.5243682861328,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 8,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.08309251815080643,
+            "single_foot_support_fraction": [
+              0.4461538461538462,
+              0.2641025641025641
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.03480267524719238,
+            "maximum_neck_speed_rad_s": 2.1857669353485107,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.08309251815080643,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.40700528025627136,
+          "root_tracking_rmse_m": 3.160839080810547,
+          "root_orientation_tracking_rmse_deg": 95.9040634947379,
+          "maximum_root_orientation_tracking_error_deg": 179.7001189414578,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.000000238418579,
+            "maximum_neck_acceleration_rad_s2": 63.59590148925781,
+            "rms_joint_jerk_rad_s3": 834.2218017578125,
+            "actuator_saturation_fraction": 0.00626984126984127,
+            "maximum_actuator_torque_nm": 200.0,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 9,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.225975900888443,
+            "single_foot_support_fraction": [
+              0.4282051282051282,
+              0.28717948717948716
+            ]
+          },
+          "screening": {
+            "passed": true,
+            "reasons": [],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.012483358383178711,
+            "maximum_neck_speed_rad_s": 2.3041794300079346,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.225975900888443,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.41215062141418457,
+          "root_tracking_rmse_m": 3.5431859493255615,
+          "root_orientation_tracking_rmse_deg": 75.14055041565749,
+          "maximum_root_orientation_tracking_error_deg": 138.224516020337,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.0,
+            "maximum_neck_acceleration_rad_s2": 60.55683898925781,
+            "rms_joint_jerk_rad_s3": 818.83447265625,
+            "actuator_saturation_fraction": 0.004682539682539682,
+            "maximum_actuator_torque_nm": 200.0,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 10,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.2741703391075134,
+            "single_foot_support_fraction": [
+              0.44871794871794873,
+              0.2564102564102564
+            ]
+          },
+          "screening": {
+            "passed": true,
+            "reasons": [],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.018024921417236328,
+            "maximum_neck_speed_rad_s": 2.8258352279663086,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.2741703391075134,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4092465341091156,
+          "root_tracking_rmse_m": 3.269160270690918,
+          "root_orientation_tracking_rmse_deg": 80.02974876332219,
+          "maximum_root_orientation_tracking_error_deg": 155.60935293320546,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.000000238418579,
+            "maximum_neck_acceleration_rad_s2": 71.02626037597656,
+            "rms_joint_jerk_rad_s3": 836.30029296875,
+            "actuator_saturation_fraction": 0.006666666666666667,
+            "maximum_actuator_torque_nm": 200.0,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 11,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.6102928519248962,
+            "single_foot_support_fraction": [
+              0.41025641025641024,
+              0.2564102564102564
+            ]
+          },
+          "screening": {
+            "passed": true,
+            "reasons": [],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.017525076866149902,
+            "maximum_neck_speed_rad_s": 2.5633015632629395,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.6102928519248962,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4120965301990509,
+          "root_tracking_rmse_m": 2.6074256896972656,
+          "root_orientation_tracking_rmse_deg": 48.30151868944812,
+          "maximum_root_orientation_tracking_error_deg": 103.73314229025924,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.000000238418579,
+            "maximum_neck_acceleration_rad_s2": 60.62837219238281,
+            "rms_joint_jerk_rad_s3": 804.3082275390625,
+            "actuator_saturation_fraction": 0.00626984126984127,
+            "maximum_actuator_torque_nm": 188.55357360839844,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 12,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.705496609210968,
+            "single_foot_support_fraction": [
+              0.4512820512820513,
+              0.27692307692307694
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.02235954999923706,
+            "maximum_neck_speed_rad_s": 2.772745370864868,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.705496609210968,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.409866601228714,
+          "root_tracking_rmse_m": 1.836838722229004,
+          "root_orientation_tracking_rmse_deg": 53.90510562252764,
+          "maximum_root_orientation_tracking_error_deg": 102.15503873988239,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.000000238418579,
+            "maximum_neck_acceleration_rad_s2": 75.81819152832031,
+            "rms_joint_jerk_rad_s3": 811.6553955078125,
+            "actuator_saturation_fraction": 0.004603174603174603,
+            "maximum_actuator_torque_nm": 200.0,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 13,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.582868218421936,
+            "single_foot_support_fraction": [
+              0.4282051282051282,
+              0.2512820512820513
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.02543407678604126,
+            "maximum_neck_speed_rad_s": 2.6256868839263916,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.582868218421936,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4119395315647125,
+          "root_tracking_rmse_m": 2.679680585861206,
+          "root_orientation_tracking_rmse_deg": 57.239861322368235,
+          "maximum_root_orientation_tracking_error_deg": 110.62139690960014,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.000000238418579,
+            "maximum_neck_acceleration_rad_s2": 69.16999816894531,
+            "rms_joint_jerk_rad_s3": 818.6891479492188,
+            "actuator_saturation_fraction": 0.0054761904761904765,
+            "maximum_actuator_torque_nm": 200.0,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 14,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": false,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.0792204812169075,
+            "single_foot_support_fraction": [
+              0.4,
+              0.2128205128205128
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad",
+              "measured neck speed exceeds3rad/s development cap",
+              "head is used as sustained support during active rise"
+            ],
+            "head_support_violation": true,
+            "longest_head_support_s": 0.43333333333333335,
+            "maximum_limit_excursion_rad": 0.039894163608551025,
+            "maximum_neck_speed_rad_s": 3.1878628730773926,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.0792204812169075,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.404138445854187,
+          "root_tracking_rmse_m": 4.282192707061768,
+          "root_orientation_tracking_rmse_deg": 108.2611627987397,
+          "maximum_root_orientation_tracking_error_deg": 178.94483566475955,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.000000238418579,
+            "maximum_neck_acceleration_rad_s2": 117.5699691772461,
+            "rms_joint_jerk_rad_s3": 833.2764282226562,
+            "actuator_saturation_fraction": 0.006825396825396826,
+            "maximum_actuator_torque_nm": 200.0,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 15,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": -0.03864284232258797,
+            "single_foot_support_fraction": [
+              0.4564102564102564,
+              0.2717948717948718
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.023552775382995605,
+            "maximum_neck_speed_rad_s": 2.7437121868133545,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": -0.03864284232258797,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.41122540831565857,
+          "root_tracking_rmse_m": 3.6462478637695312,
+          "root_orientation_tracking_rmse_deg": 111.12599768065006,
+          "maximum_root_orientation_tracking_error_deg": 179.48942698987022,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.000000238418579,
+            "maximum_neck_acceleration_rad_s2": 64.2188720703125,
+            "rms_joint_jerk_rad_s3": 836.3297119140625,
+            "actuator_saturation_fraction": 0.005396825396825397,
+            "maximum_actuator_torque_nm": 200.0,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        }
+      ],
+      "automatic_resets": 0,
+      "pose_writes_after_initial_reset": false,
+      "clinical_injury_validated": false
+    },
+    {
+      "motion": "walk",
+      "reference_description": "Attributed DeepMimic walking reference",
+      "seed": 131,
+      "num_envs": 16,
+      "steps": 480,
+      "settling_steps": 30,
+      "dt": 0.03333333333333333,
+      "checkpoint_sha256": "f1928f97f43af600a5f5843fb5ab72a63b09655a2b833345fd9e41041b121ae0",
+      "checkpoint_training_velocity_convention": "pre-review: origin reference written as pelvis COM velocity",
+      "telemetry_sha256": "748f824f23e76720b358942c96b16bb54f7b54f60cc0c7f35056e9fa9609023e",
+      "success_rate": 0.0,
+      "model_screen": {
+        "passed": true,
+        "reasons": [],
+        "clinical_injury_validated": false
+      },
+      "per_environment": [
+        {
+          "body": 0,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.5183526873588562,
+            "single_foot_support_fraction": [
+              0.41025641025641024,
+              0.2564102564102564
+            ]
+          },
+          "screening": {
+            "passed": true,
+            "reasons": [],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.01248418353497982,
+            "maximum_neck_speed_rad_s": 2.347517490386963,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.5183526873588562,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4110669195652008,
+          "root_tracking_rmse_m": 2.1182615756988525,
+          "root_orientation_tracking_rmse_deg": 60.35048169362646,
+          "maximum_root_orientation_tracking_error_deg": 111.23248663339609,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.000000238418579,
+            "maximum_neck_acceleration_rad_s2": 72.7536392211914,
+            "rms_joint_jerk_rad_s3": 814.7208251953125,
+            "actuator_saturation_fraction": 0.004920634920634921,
+            "maximum_actuator_torque_nm": 200.0,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 1,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": -0.23203502595424652,
+            "single_foot_support_fraction": [
+              0.45897435897435895,
+              0.23076923076923078
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.02195972204208374,
+            "maximum_neck_speed_rad_s": 2.527884006500244,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": -0.23203502595424652,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4128091633319855,
+          "root_tracking_rmse_m": 5.709508419036865,
+          "root_orientation_tracking_rmse_deg": 120.03509642991985,
+          "maximum_root_orientation_tracking_error_deg": 179.97084328110924,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.000000238418579,
+            "maximum_neck_acceleration_rad_s2": 67.68292236328125,
+            "rms_joint_jerk_rad_s3": 801.0155639648438,
+            "actuator_saturation_fraction": 0.004126984126984127,
+            "maximum_actuator_torque_nm": 199.63734436035156,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 2,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": -0.0879381000995636,
+            "single_foot_support_fraction": [
+              0.4358974358974359,
+              0.28717948717948716
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.021380841732025146,
+            "maximum_neck_speed_rad_s": 2.4985105991363525,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": -0.0879381000995636,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.41274333000183105,
+          "root_tracking_rmse_m": 4.269235610961914,
+          "root_orientation_tracking_rmse_deg": 110.74808248762393,
+          "maximum_root_orientation_tracking_error_deg": 179.503588397585,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.000000238418579,
+            "maximum_neck_acceleration_rad_s2": 72.82270812988281,
+            "rms_joint_jerk_rad_s3": 817.9943237304688,
+            "actuator_saturation_fraction": 0.005396825396825397,
+            "maximum_actuator_torque_nm": 195.28970336914062,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 3,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": -0.3586716055870056,
+            "single_foot_support_fraction": [
+              0.4307692307692308,
+              0.2512820512820513
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.026486456394195557,
+            "maximum_neck_speed_rad_s": 2.754117965698242,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": -0.3586716055870056,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.41129130125045776,
+          "root_tracking_rmse_m": 6.353986740112305,
+          "root_orientation_tracking_rmse_deg": 127.30526755536417,
+          "maximum_root_orientation_tracking_error_deg": 179.4334943094035,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.000000238418579,
+            "maximum_neck_acceleration_rad_s2": 70.00464630126953,
+            "rms_joint_jerk_rad_s3": 816.9299926757812,
+            "actuator_saturation_fraction": 0.005158730158730159,
+            "maximum_actuator_torque_nm": 200.0,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 4,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.32126331329345703,
+            "single_foot_support_fraction": [
+              0.4564102564102564,
+              0.28974358974358977
+            ]
+          },
+          "screening": {
+            "passed": true,
+            "reasons": [],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.010055341757833958,
+            "maximum_neck_speed_rad_s": 2.858649492263794,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.32126331329345703,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.41202399134635925,
+          "root_tracking_rmse_m": 3.5881059169769287,
+          "root_orientation_tracking_rmse_deg": 75.89340499971269,
+          "maximum_root_orientation_tracking_error_deg": 136.82696301254023,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.000000238418579,
+            "maximum_neck_acceleration_rad_s2": 74.64524841308594,
+            "rms_joint_jerk_rad_s3": 841.3922119140625,
+            "actuator_saturation_fraction": 0.005873015873015873,
+            "maximum_actuator_torque_nm": 184.73622131347656,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 5,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.11709605157375336,
+            "single_foot_support_fraction": [
+              0.4358974358974359,
+              0.2692307692307692
+            ]
+          },
+          "screening": {
+            "passed": true,
+            "reasons": [],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.017064929008483887,
+            "maximum_neck_speed_rad_s": 2.6960647106170654,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.11709605157375336,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.41057080030441284,
+          "root_tracking_rmse_m": 4.416581630706787,
+          "root_orientation_tracking_rmse_deg": 92.94724027300289,
+          "maximum_root_orientation_tracking_error_deg": 166.75550199444675,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.000000238418579,
+            "maximum_neck_acceleration_rad_s2": 61.742618560791016,
+            "rms_joint_jerk_rad_s3": 797.3115234375,
+            "actuator_saturation_fraction": 0.0064285714285714285,
+            "maximum_actuator_torque_nm": 188.52442932128906,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 6,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.41008931398391724,
+            "single_foot_support_fraction": [
+              0.45384615384615384,
+              0.23076923076923078
+            ]
+          },
+          "screening": {
+            "passed": true,
+            "reasons": [],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.011485680006444454,
+            "maximum_neck_speed_rad_s": 2.410101890563965,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.41008931398391724,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4097868800163269,
+          "root_tracking_rmse_m": 2.78269624710083,
+          "root_orientation_tracking_rmse_deg": 65.33797044018408,
+          "maximum_root_orientation_tracking_error_deg": 117.74015006485979,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.000000238418579,
+            "maximum_neck_acceleration_rad_s2": 57.81813430786133,
+            "rms_joint_jerk_rad_s3": 820.1406860351562,
+            "actuator_saturation_fraction": 0.004523809523809524,
+            "maximum_actuator_torque_nm": 200.0,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 7,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": false,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": -0.08118890970945358,
+            "single_foot_support_fraction": [
+              0.4282051282051282,
+              0.17435897435897435
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad",
+              "measured neck speed exceeds3rad/s development cap",
+              "head is used as sustained support during active rise"
+            ],
+            "head_support_violation": true,
+            "longest_head_support_s": 0.8333333333333334,
+            "maximum_limit_excursion_rad": 0.03243523836135864,
+            "maximum_neck_speed_rad_s": 4.490622043609619,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": -0.08118890970945358,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.40438854694366455,
+          "root_tracking_rmse_m": 5.383824825286865,
+          "root_orientation_tracking_rmse_deg": 126.83748158571794,
+          "maximum_root_orientation_tracking_error_deg": 179.7667832611116,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.0,
+            "maximum_neck_acceleration_rad_s2": 174.41802978515625,
+            "rms_joint_jerk_rad_s3": 784.9834594726562,
+            "actuator_saturation_fraction": 0.006666666666666667,
+            "maximum_actuator_torque_nm": 200.0,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 8,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.4401925802230835,
+            "single_foot_support_fraction": [
+              0.4025641025641026,
+              0.26666666666666666
+            ]
+          },
+          "screening": {
+            "passed": true,
+            "reasons": [],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.0174141526222229,
+            "maximum_neck_speed_rad_s": 2.5466904640197754,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.4401925802230835,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.41022971272468567,
+          "root_tracking_rmse_m": 4.1883649826049805,
+          "root_orientation_tracking_rmse_deg": 70.67538519510391,
+          "maximum_root_orientation_tracking_error_deg": 121.38084182013559,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.0,
+            "maximum_neck_acceleration_rad_s2": 62.501102447509766,
+            "rms_joint_jerk_rad_s3": 820.3363037109375,
+            "actuator_saturation_fraction": 0.005873015873015873,
+            "maximum_actuator_torque_nm": 190.36163330078125,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 9,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": -0.20489206910133362,
+            "single_foot_support_fraction": [
+              0.44871794871794873,
+              0.2692307692307692
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.02191859483718872,
+            "maximum_neck_speed_rad_s": 2.235398292541504,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": -0.20489206910133362,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.41323959827423096,
+          "root_tracking_rmse_m": 5.661206245422363,
+          "root_orientation_tracking_rmse_deg": 111.42575759265351,
+          "maximum_root_orientation_tracking_error_deg": 170.63393730073355,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.000000238418579,
+            "maximum_neck_acceleration_rad_s2": 54.63463592529297,
+            "rms_joint_jerk_rad_s3": 794.6956787109375,
+            "actuator_saturation_fraction": 0.003968253968253968,
+            "maximum_actuator_torque_nm": 200.0,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 10,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.3476908504962921,
+            "single_foot_support_fraction": [
+              0.47435897435897434,
+              0.28717948717948716
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.022954046726226807,
+            "maximum_neck_speed_rad_s": 2.3637330532073975,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.3476908504962921,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4124079942703247,
+          "root_tracking_rmse_m": 4.206747055053711,
+          "root_orientation_tracking_rmse_deg": 69.76302790108062,
+          "maximum_root_orientation_tracking_error_deg": 117.75728685259581,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.0,
+            "maximum_neck_acceleration_rad_s2": 53.36845397949219,
+            "rms_joint_jerk_rad_s3": 807.1256103515625,
+            "actuator_saturation_fraction": 0.004206349206349207,
+            "maximum_actuator_torque_nm": 179.8817596435547,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 11,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": -0.35519856214523315,
+            "single_foot_support_fraction": [
+              0.44871794871794873,
+              0.2743589743589744
+            ]
+          },
+          "screening": {
+            "passed": true,
+            "reasons": [],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.019040942192077637,
+            "maximum_neck_speed_rad_s": 2.7361950874328613,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": -0.35519856214523315,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.41114431619644165,
+          "root_tracking_rmse_m": 6.043550491333008,
+          "root_orientation_tracking_rmse_deg": 120.15921856201739,
+          "maximum_root_orientation_tracking_error_deg": 178.67774116549552,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.0,
+            "maximum_neck_acceleration_rad_s2": 68.2723388671875,
+            "rms_joint_jerk_rad_s3": 804.5573120117188,
+            "actuator_saturation_fraction": 0.005873015873015873,
+            "maximum_actuator_torque_nm": 192.59779357910156,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 12,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.30298754572868347,
+            "single_foot_support_fraction": [
+              0.44358974358974357,
+              0.26666666666666666
+            ]
+          },
+          "screening": {
+            "passed": true,
+            "reasons": [],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.012246927246451378,
+            "maximum_neck_speed_rad_s": 2.694884777069092,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.30298754572868347,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4097406566143036,
+          "root_tracking_rmse_m": 2.961357355117798,
+          "root_orientation_tracking_rmse_deg": 78.94175113651202,
+          "maximum_root_orientation_tracking_error_deg": 140.27211049380605,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.000000238418579,
+            "maximum_neck_acceleration_rad_s2": 69.00975036621094,
+            "rms_joint_jerk_rad_s3": 821.4165649414062,
+            "actuator_saturation_fraction": 0.006190476190476191,
+            "maximum_actuator_torque_nm": 200.0,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 13,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.5890622138977051,
+            "single_foot_support_fraction": [
+              0.40512820512820513,
+              0.3
+            ]
+          },
+          "screening": {
+            "passed": true,
+            "reasons": [],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.015391707420349121,
+            "maximum_neck_speed_rad_s": 2.816133737564087,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.5890622138977051,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4124926030635834,
+          "root_tracking_rmse_m": 2.501253843307495,
+          "root_orientation_tracking_rmse_deg": 58.73210955377821,
+          "maximum_root_orientation_tracking_error_deg": 111.39074154655465,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.000000238418579,
+            "maximum_neck_acceleration_rad_s2": 66.67683410644531,
+            "rms_joint_jerk_rad_s3": 799.3402709960938,
+            "actuator_saturation_fraction": 0.005158730158730159,
+            "maximum_actuator_torque_nm": 200.0,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 14,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.2834985554218292,
+            "single_foot_support_fraction": [
+              0.4256410256410256,
+              0.258974358974359
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.02340775728225708,
+            "maximum_neck_speed_rad_s": 2.529719591140747,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.2834985554218292,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4075051546096802,
+          "root_tracking_rmse_m": 4.986170291900635,
+          "root_orientation_tracking_rmse_deg": 81.39694584756215,
+          "maximum_root_orientation_tracking_error_deg": 125.02332563019571,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.0,
+            "maximum_neck_acceleration_rad_s2": 65.18219757080078,
+            "rms_joint_jerk_rad_s3": 821.7527465820312,
+            "actuator_saturation_fraction": 0.005714285714285714,
+            "maximum_actuator_torque_nm": 200.0,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 15,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.2626993954181671,
+            "single_foot_support_fraction": [
+              0.441025641025641,
+              0.2743589743589744
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.02030080556869507,
+            "maximum_neck_speed_rad_s": 2.8882052898406982,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.2626993954181671,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.41149434447288513,
+          "root_tracking_rmse_m": 4.05372428894043,
+          "root_orientation_tracking_rmse_deg": 81.24001039363482,
+          "maximum_root_orientation_tracking_error_deg": 138.45093417834622,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.000000238418579,
+            "maximum_neck_acceleration_rad_s2": 63.36671447753906,
+            "rms_joint_jerk_rad_s3": 795.2308349609375,
+            "actuator_saturation_fraction": 0.0054761904761904765,
+            "maximum_actuator_torque_nm": 200.0,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        }
+      ],
+      "automatic_resets": 0,
+      "pose_writes_after_initial_reset": false,
+      "clinical_injury_validated": false
+    },
+    {
+      "motion": "staged_prone",
+      "reference_description": "Authored staged targets; NOT motion capture",
+      "seed": 47,
+      "num_envs": 16,
+      "steps": 480,
+      "settling_steps": 30,
+      "dt": 0.03333333333333333,
+      "checkpoint_sha256": "30996e88f9cf0d357aac76554808f4126b2788c94e4cd6838ec432644a231a1e",
+      "checkpoint_training_velocity_convention": "pre-review: origin reference written as pelvis COM velocity",
+      "telemetry_sha256": "d8df4488473d3075c3b718cf0bab5af633fb6be600f0fab4ccf18de1319503f4",
+      "success_rate": 0.0,
+      "model_screen": {
+        "passed": true,
+        "reasons": [],
+        "clinical_injury_validated": false
+      },
+      "per_environment": [
+        {
+          "body": 0,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.035014986991882324,
+            "single_foot_support_fraction": [
+              0.0,
+              0.0
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.033109620213508606,
+            "maximum_neck_speed_rad_s": 2.5501692295074463,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.035014986991882324,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4573499262332916,
+          "root_tracking_rmse_m": 0.3468993306159973,
+          "root_orientation_tracking_rmse_deg": 36.590465075883074,
+          "maximum_root_orientation_tracking_error_deg": 59.774772238413576,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.0,
+            "maximum_neck_acceleration_rad_s2": 94.4869613647461,
+            "rms_joint_jerk_rad_s3": 209.47349548339844,
+            "actuator_saturation_fraction": 0.010714285714285714,
+            "maximum_actuator_torque_nm": 137.67433166503906,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 1,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.03376161307096481,
+            "single_foot_support_fraction": [
+              0.0,
+              0.0
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.03510570526123047,
+            "maximum_neck_speed_rad_s": 2.5073015689849854,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.03376161307096481,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.45733118057250977,
+          "root_tracking_rmse_m": 0.35106387734413147,
+          "root_orientation_tracking_rmse_deg": 36.62260245667381,
+          "maximum_root_orientation_tracking_error_deg": 59.91221883603364,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.0,
+            "maximum_neck_acceleration_rad_s2": 98.59205627441406,
+            "rms_joint_jerk_rad_s3": 215.85813903808594,
+            "actuator_saturation_fraction": 0.010714285714285714,
+            "maximum_actuator_torque_nm": 140.9297637939453,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 2,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.03225082531571388,
+            "single_foot_support_fraction": [
+              0.0,
+              0.0
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.035218141973018646,
+            "maximum_neck_speed_rad_s": 2.3497419357299805,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.03225082531571388,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.45764783024787903,
+          "root_tracking_rmse_m": 0.3447016179561615,
+          "root_orientation_tracking_rmse_deg": 36.75123531388559,
+          "maximum_root_orientation_tracking_error_deg": 60.123335938722335,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.0,
+            "maximum_neck_acceleration_rad_s2": 99.06556701660156,
+            "rms_joint_jerk_rad_s3": 208.96839904785156,
+            "actuator_saturation_fraction": 0.010238095238095239,
+            "maximum_actuator_torque_nm": 140.44039916992188,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 3,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.033029768615961075,
+            "single_foot_support_fraction": [
+              0.0,
+              0.0
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.032014112919569016,
+            "maximum_neck_speed_rad_s": 2.912041664123535,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.033029768615961075,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4575172960758209,
+          "root_tracking_rmse_m": 0.34902745485305786,
+          "root_orientation_tracking_rmse_deg": 36.767232023023,
+          "maximum_root_orientation_tracking_error_deg": 59.94487128715592,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.0,
+            "maximum_neck_acceleration_rad_s2": 118.68671417236328,
+            "rms_joint_jerk_rad_s3": 224.48399353027344,
+            "actuator_saturation_fraction": 0.010317460317460317,
+            "maximum_actuator_torque_nm": 151.4751739501953,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 4,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.03558966889977455,
+            "single_foot_support_fraction": [
+              0.0,
+              0.0
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.033759281039237976,
+            "maximum_neck_speed_rad_s": 2.871920585632324,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.03558966889977455,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4574257433414459,
+          "root_tracking_rmse_m": 0.3452152609825134,
+          "root_orientation_tracking_rmse_deg": 36.55954053572206,
+          "maximum_root_orientation_tracking_error_deg": 59.758705797013405,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.0,
+            "maximum_neck_acceleration_rad_s2": 114.68447875976562,
+            "rms_joint_jerk_rad_s3": 216.46620178222656,
+            "actuator_saturation_fraction": 0.010634920634920634,
+            "maximum_actuator_torque_nm": 148.73226928710938,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 5,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.033609963953495026,
+            "single_foot_support_fraction": [
+              0.0,
+              0.0
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.036153290420770645,
+            "maximum_neck_speed_rad_s": 2.3317599296569824,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.033609963953495026,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4576907753944397,
+          "root_tracking_rmse_m": 0.35035645961761475,
+          "root_orientation_tracking_rmse_deg": 36.70144172363682,
+          "maximum_root_orientation_tracking_error_deg": 59.78890421259609,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.0,
+            "maximum_neck_acceleration_rad_s2": 98.35592651367188,
+            "rms_joint_jerk_rad_s3": 206.6603240966797,
+            "actuator_saturation_fraction": 0.01,
+            "maximum_actuator_torque_nm": 140.64166259765625,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 6,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.03432724252343178,
+            "single_foot_support_fraction": [
+              0.0,
+              0.0
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.033101893961429596,
+            "maximum_neck_speed_rad_s": 2.871253490447998,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.03432724252343178,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.45754554867744446,
+          "root_tracking_rmse_m": 0.34831148386001587,
+          "root_orientation_tracking_rmse_deg": 36.683712926957845,
+          "maximum_root_orientation_tracking_error_deg": 59.80882033846007,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.0,
+            "maximum_neck_acceleration_rad_s2": 114.0481185913086,
+            "rms_joint_jerk_rad_s3": 211.79620361328125,
+            "actuator_saturation_fraction": 0.010396825396825397,
+            "maximum_actuator_torque_nm": 149.09217834472656,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 7,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.03259342536330223,
+            "single_foot_support_fraction": [
+              0.0,
+              0.0
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.03404674679040909,
+            "maximum_neck_speed_rad_s": 2.7323179244995117,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.03259342536330223,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4573841691017151,
+          "root_tracking_rmse_m": 0.34392303228378296,
+          "root_orientation_tracking_rmse_deg": 36.648902328801455,
+          "maximum_root_orientation_tracking_error_deg": 59.76393732135941,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.0,
+            "maximum_neck_acceleration_rad_s2": 95.32195281982422,
+            "rms_joint_jerk_rad_s3": 213.19406127929688,
+            "actuator_saturation_fraction": 0.010555555555555556,
+            "maximum_actuator_torque_nm": 138.09254455566406,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 8,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.03365471586585045,
+            "single_foot_support_fraction": [
+              0.0,
+              0.0
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.032759446650743484,
+            "maximum_neck_speed_rad_s": 2.9532968997955322,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.03365471586585045,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4572419226169586,
+          "root_tracking_rmse_m": 0.34658700227737427,
+          "root_orientation_tracking_rmse_deg": 36.61289970000852,
+          "maximum_root_orientation_tracking_error_deg": 59.76506145766445,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.0,
+            "maximum_neck_acceleration_rad_s2": 97.2000732421875,
+            "rms_joint_jerk_rad_s3": 212.73526000976562,
+            "actuator_saturation_fraction": 0.011111111111111112,
+            "maximum_actuator_torque_nm": 139.55184936523438,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 9,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.030560815706849098,
+            "single_foot_support_fraction": [
+              0.0,
+              0.0
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.03184197098016739,
+            "maximum_neck_speed_rad_s": 2.5795798301696777,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.030560815706849098,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4570171535015106,
+          "root_tracking_rmse_m": 0.34200558066368103,
+          "root_orientation_tracking_rmse_deg": 36.66661277273893,
+          "maximum_root_orientation_tracking_error_deg": 60.11384052315201,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.0,
+            "maximum_neck_acceleration_rad_s2": 95.34136962890625,
+            "rms_joint_jerk_rad_s3": 215.00082397460938,
+            "actuator_saturation_fraction": 0.01,
+            "maximum_actuator_torque_nm": 138.41221618652344,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 10,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.033336564898490906,
+            "single_foot_support_fraction": [
+              0.0,
+              0.0
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.033257316797971725,
+            "maximum_neck_speed_rad_s": 2.4994091987609863,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.033336564898490906,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4568079113960266,
+          "root_tracking_rmse_m": 0.34621188044548035,
+          "root_orientation_tracking_rmse_deg": 36.49304690661041,
+          "maximum_root_orientation_tracking_error_deg": 59.740757663870845,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.0,
+            "maximum_neck_acceleration_rad_s2": 93.70236206054688,
+            "rms_joint_jerk_rad_s3": 212.9259796142578,
+            "actuator_saturation_fraction": 0.011587301587301587,
+            "maximum_actuator_torque_nm": 137.23931884765625,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 11,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.032284803688526154,
+            "single_foot_support_fraction": [
+              0.0,
+              0.0
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.03223445639014244,
+            "maximum_neck_speed_rad_s": 2.4419431686401367,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.032284803688526154,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4570786654949188,
+          "root_tracking_rmse_m": 0.347791463136673,
+          "root_orientation_tracking_rmse_deg": 36.6293005990255,
+          "maximum_root_orientation_tracking_error_deg": 59.704077402973816,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.0,
+            "maximum_neck_acceleration_rad_s2": 97.7925796508789,
+            "rms_joint_jerk_rad_s3": 216.8378448486328,
+            "actuator_saturation_fraction": 0.01126984126984127,
+            "maximum_actuator_torque_nm": 140.25698852539062,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 12,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.03266909345984459,
+            "single_foot_support_fraction": [
+              0.0,
+              0.0
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.033938560634851456,
+            "maximum_neck_speed_rad_s": 2.9597065448760986,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.03266909345984459,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4573533535003662,
+          "root_tracking_rmse_m": 0.34940922260284424,
+          "root_orientation_tracking_rmse_deg": 36.65716609957971,
+          "maximum_root_orientation_tracking_error_deg": 59.74412209681961,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.000000238418579,
+            "maximum_neck_acceleration_rad_s2": 97.42169952392578,
+            "rms_joint_jerk_rad_s3": 219.8705291748047,
+            "actuator_saturation_fraction": 0.010476190476190476,
+            "maximum_actuator_torque_nm": 140.33355712890625,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 13,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.03284461051225662,
+            "single_foot_support_fraction": [
+              0.0,
+              0.0
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.03436568006873131,
+            "maximum_neck_speed_rad_s": 2.538684606552124,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.03284461051225662,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4576529860496521,
+          "root_tracking_rmse_m": 0.3462983965873718,
+          "root_orientation_tracking_rmse_deg": 36.705061597292165,
+          "maximum_root_orientation_tracking_error_deg": 59.909271304665744,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.0,
+            "maximum_neck_acceleration_rad_s2": 97.02836608886719,
+            "rms_joint_jerk_rad_s3": 206.83531188964844,
+            "actuator_saturation_fraction": 0.010158730158730159,
+            "maximum_actuator_torque_nm": 139.73582458496094,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 14,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.033514171838760376,
+            "single_foot_support_fraction": [
+              0.0,
+              0.0
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.033660970628261566,
+            "maximum_neck_speed_rad_s": 2.899076461791992,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.033514171838760376,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.45723429322242737,
+          "root_tracking_rmse_m": 0.3484937846660614,
+          "root_orientation_tracking_rmse_deg": 36.54872197451248,
+          "maximum_root_orientation_tracking_error_deg": 59.86151942193999,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.0,
+            "maximum_neck_acceleration_rad_s2": 93.94853210449219,
+            "rms_joint_jerk_rad_s3": 207.9488983154297,
+            "actuator_saturation_fraction": 0.011825396825396826,
+            "maximum_actuator_torque_nm": 137.80665588378906,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 15,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.03175579756498337,
+            "single_foot_support_fraction": [
+              0.0,
+              0.0
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.03311276063323021,
+            "maximum_neck_speed_rad_s": 2.6321067810058594,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.03175579756498337,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4573332667350769,
+          "root_tracking_rmse_m": 0.34303855895996094,
+          "root_orientation_tracking_rmse_deg": 36.7323245308942,
+          "maximum_root_orientation_tracking_error_deg": 59.80957057970936,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.0,
+            "maximum_neck_acceleration_rad_s2": 95.23374938964844,
+            "rms_joint_jerk_rad_s3": 204.8902130126953,
+            "actuator_saturation_fraction": 0.010476190476190476,
+            "maximum_actuator_torque_nm": 138.7865447998047,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        }
+      ],
+      "automatic_resets": 0,
+      "pose_writes_after_initial_reset": false,
+      "clinical_injury_validated": false
+    },
+    {
+      "motion": "staged_prone",
+      "reference_description": "Authored staged targets; NOT motion capture",
+      "seed": 97,
+      "num_envs": 16,
+      "steps": 480,
+      "settling_steps": 30,
+      "dt": 0.03333333333333333,
+      "checkpoint_sha256": "30996e88f9cf0d357aac76554808f4126b2788c94e4cd6838ec432644a231a1e",
+      "checkpoint_training_velocity_convention": "pre-review: origin reference written as pelvis COM velocity",
+      "telemetry_sha256": "2c590997c6ea9afbc9cb026db02410da0c4409d119e80d44c186b464a56dc0b8",
+      "success_rate": 0.0,
+      "model_screen": {
+        "passed": true,
+        "reasons": [],
+        "clinical_injury_validated": false
+      },
+      "per_environment": [
+        {
+          "body": 0,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.03217805549502373,
+            "single_foot_support_fraction": [
+              0.0,
+              0.0
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.03190859407186508,
+            "maximum_neck_speed_rad_s": 2.50665020942688,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.03217805549502373,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.45683905482292175,
+          "root_tracking_rmse_m": 0.33960992097854614,
+          "root_orientation_tracking_rmse_deg": 36.48790385355736,
+          "maximum_root_orientation_tracking_error_deg": 60.062064015143456,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.0,
+            "maximum_neck_acceleration_rad_s2": 93.66619873046875,
+            "rms_joint_jerk_rad_s3": 216.21267700195312,
+            "actuator_saturation_fraction": 0.011507936507936509,
+            "maximum_actuator_torque_nm": 136.94850158691406,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 1,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.03369387611746788,
+            "single_foot_support_fraction": [
+              0.0,
+              0.0
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.035639725625514984,
+            "maximum_neck_speed_rad_s": 2.168882369995117,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.03369387611746788,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.45768195390701294,
+          "root_tracking_rmse_m": 0.3488282859325409,
+          "root_orientation_tracking_rmse_deg": 36.67372493907049,
+          "maximum_root_orientation_tracking_error_deg": 60.02792319359303,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.0,
+            "maximum_neck_acceleration_rad_s2": 93.83041381835938,
+            "rms_joint_jerk_rad_s3": 209.90036010742188,
+            "actuator_saturation_fraction": 0.010079365079365079,
+            "maximum_actuator_torque_nm": 137.12864685058594,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 2,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.03145802021026611,
+            "single_foot_support_fraction": [
+              0.0,
+              0.0
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.03298351168632507,
+            "maximum_neck_speed_rad_s": 2.534613847732544,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.03145802021026611,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4568678140640259,
+          "root_tracking_rmse_m": 0.34652939438819885,
+          "root_orientation_tracking_rmse_deg": 36.532399294087,
+          "maximum_root_orientation_tracking_error_deg": 59.74363706316291,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.0,
+            "maximum_neck_acceleration_rad_s2": 98.65878295898438,
+            "rms_joint_jerk_rad_s3": 215.72140502929688,
+            "actuator_saturation_fraction": 0.011111111111111112,
+            "maximum_actuator_torque_nm": 140.9837646484375,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 3,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.03494546189904213,
+            "single_foot_support_fraction": [
+              0.0,
+              0.0
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.03514549508690834,
+            "maximum_neck_speed_rad_s": 2.352073907852173,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.03494546189904213,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4570390582084656,
+          "root_tracking_rmse_m": 0.34783005714416504,
+          "root_orientation_tracking_rmse_deg": 36.5367084845484,
+          "maximum_root_orientation_tracking_error_deg": 59.586086110883755,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.0,
+            "maximum_neck_acceleration_rad_s2": 98.69853210449219,
+            "rms_joint_jerk_rad_s3": 214.04855346679688,
+            "actuator_saturation_fraction": 0.011587301587301587,
+            "maximum_actuator_torque_nm": 140.79949951171875,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 4,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.03443794324994087,
+            "single_foot_support_fraction": [
+              0.0,
+              0.0
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.03198326751589775,
+            "maximum_neck_speed_rad_s": 2.90297269821167,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.03443794324994087,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4568634331226349,
+          "root_tracking_rmse_m": 0.3439941704273224,
+          "root_orientation_tracking_rmse_deg": 36.53722278958796,
+          "maximum_root_orientation_tracking_error_deg": 59.72697529474466,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.0,
+            "maximum_neck_acceleration_rad_s2": 117.41847229003906,
+            "rms_joint_jerk_rad_s3": 222.7444610595703,
+            "actuator_saturation_fraction": 0.011587301587301587,
+            "maximum_actuator_torque_nm": 151.23402404785156,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 5,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.033285725861787796,
+            "single_foot_support_fraction": [
+              0.0,
+              0.0
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.032674651592969894,
+            "maximum_neck_speed_rad_s": 2.496349334716797,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.033285725861787796,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4567841589450836,
+          "root_tracking_rmse_m": 0.34569913148880005,
+          "root_orientation_tracking_rmse_deg": 36.47919528984982,
+          "maximum_root_orientation_tracking_error_deg": 59.73772173803133,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.0,
+            "maximum_neck_acceleration_rad_s2": 94.4396743774414,
+            "rms_joint_jerk_rad_s3": 214.87939453125,
+            "actuator_saturation_fraction": 0.011904761904761904,
+            "maximum_actuator_torque_nm": 137.90513610839844,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 6,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.034591857343912125,
+            "single_foot_support_fraction": [
+              0.0,
+              0.0
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.03534969314932823,
+            "maximum_neck_speed_rad_s": 2.876408338546753,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.034591857343912125,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.45716238021850586,
+          "root_tracking_rmse_m": 0.3445577323436737,
+          "root_orientation_tracking_rmse_deg": 36.47978578946146,
+          "maximum_root_orientation_tracking_error_deg": 59.73851101922482,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.0,
+            "maximum_neck_acceleration_rad_s2": 114.48688507080078,
+            "rms_joint_jerk_rad_s3": 215.28968811035156,
+            "actuator_saturation_fraction": 0.01119047619047619,
+            "maximum_actuator_torque_nm": 149.39610290527344,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 7,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.031804680824279785,
+            "single_foot_support_fraction": [
+              0.0,
+              0.0
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.03261353820562363,
+            "maximum_neck_speed_rad_s": 2.962031602859497,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.031804680824279785,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.45717766880989075,
+          "root_tracking_rmse_m": 0.3462802469730377,
+          "root_orientation_tracking_rmse_deg": 36.6492990627738,
+          "maximum_root_orientation_tracking_error_deg": 59.786352231787326,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.0,
+            "maximum_neck_acceleration_rad_s2": 96.0489730834961,
+            "rms_joint_jerk_rad_s3": 208.37918090820312,
+            "actuator_saturation_fraction": 0.010952380952380953,
+            "maximum_actuator_torque_nm": 139.25787353515625,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 8,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.035006098449230194,
+            "single_foot_support_fraction": [
+              0.0,
+              0.0
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.032218847423791885,
+            "maximum_neck_speed_rad_s": 2.9618895053863525,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.035006098449230194,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4572911560535431,
+          "root_tracking_rmse_m": 0.34998369216918945,
+          "root_orientation_tracking_rmse_deg": 36.657199928435716,
+          "maximum_root_orientation_tracking_error_deg": 59.71954361954092,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.000000238418579,
+            "maximum_neck_acceleration_rad_s2": 98.36901092529297,
+            "rms_joint_jerk_rad_s3": 214.90098571777344,
+            "actuator_saturation_fraction": 0.010793650793650795,
+            "maximum_actuator_torque_nm": 141.2147979736328,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 9,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.034934815019369125,
+            "single_foot_support_fraction": [
+              0.0,
+              0.0
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.036350082606077194,
+            "maximum_neck_speed_rad_s": 2.1698458194732666,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.034934815019369125,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.45742031931877136,
+          "root_tracking_rmse_m": 0.341692715883255,
+          "root_orientation_tracking_rmse_deg": 36.47170881633962,
+          "maximum_root_orientation_tracking_error_deg": 60.02531252558619,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.0,
+            "maximum_neck_acceleration_rad_s2": 94.3875732421875,
+            "rms_joint_jerk_rad_s3": 205.73663330078125,
+            "actuator_saturation_fraction": 0.01126984126984127,
+            "maximum_actuator_torque_nm": 138.2397003173828,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 10,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.03338933736085892,
+            "single_foot_support_fraction": [
+              0.0,
+              0.0
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.03506440669298172,
+            "maximum_neck_speed_rad_s": 2.739860773086548,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.03338933736085892,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4576272666454315,
+          "root_tracking_rmse_m": 0.3450849652290344,
+          "root_orientation_tracking_rmse_deg": 36.725684837221856,
+          "maximum_root_orientation_tracking_error_deg": 59.60276189598847,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.0,
+            "maximum_neck_acceleration_rad_s2": 96.22484588623047,
+            "rms_joint_jerk_rad_s3": 210.86996459960938,
+            "actuator_saturation_fraction": 0.010158730158730159,
+            "maximum_actuator_torque_nm": 138.6478271484375,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 11,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.030816134065389633,
+            "single_foot_support_fraction": [
+              0.0,
+              0.0
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.03565443307161331,
+            "maximum_neck_speed_rad_s": 2.8829891681671143,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.030816134065389633,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.45770347118377686,
+          "root_tracking_rmse_m": 0.34149861335754395,
+          "root_orientation_tracking_rmse_deg": 36.73215037885383,
+          "maximum_root_orientation_tracking_error_deg": 59.99540070056968,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.0,
+            "maximum_neck_acceleration_rad_s2": 115.6754379272461,
+            "rms_joint_jerk_rad_s3": 216.5049591064453,
+            "actuator_saturation_fraction": 0.009841269841269842,
+            "maximum_actuator_torque_nm": 149.58384704589844,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 12,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.03541376814246178,
+            "single_foot_support_fraction": [
+              0.0,
+              0.0
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.03216668218374252,
+            "maximum_neck_speed_rad_s": 2.5669302940368652,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.03541376814246178,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4571666419506073,
+          "root_tracking_rmse_m": 0.3513753116130829,
+          "root_orientation_tracking_rmse_deg": 36.582220082778115,
+          "maximum_root_orientation_tracking_error_deg": 59.68297447896401,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.0,
+            "maximum_neck_acceleration_rad_s2": 97.27809143066406,
+            "rms_joint_jerk_rad_s3": 212.47381591796875,
+            "actuator_saturation_fraction": 0.01126984126984127,
+            "maximum_actuator_torque_nm": 140.32473754882812,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 13,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.03244199603796005,
+            "single_foot_support_fraction": [
+              0.0,
+              0.0
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.0330677330493927,
+            "maximum_neck_speed_rad_s": 2.420760154724121,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.03244199603796005,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.457275390625,
+          "root_tracking_rmse_m": 0.34632608294487,
+          "root_orientation_tracking_rmse_deg": 36.7449246224232,
+          "maximum_root_orientation_tracking_error_deg": 60.1280361751895,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.000000238418579,
+            "maximum_neck_acceleration_rad_s2": 96.58619689941406,
+            "rms_joint_jerk_rad_s3": 219.6114044189453,
+            "actuator_saturation_fraction": 0.00992063492063492,
+            "maximum_actuator_torque_nm": 139.9818115234375,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 14,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.03468828275799751,
+            "single_foot_support_fraction": [
+              0.0,
+              0.0
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.03565596044063568,
+            "maximum_neck_speed_rad_s": 2.2730214595794678,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.03468828275799751,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4574020504951477,
+          "root_tracking_rmse_m": 0.35023990273475647,
+          "root_orientation_tracking_rmse_deg": 36.585434787068685,
+          "maximum_root_orientation_tracking_error_deg": 59.647990253901476,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.0,
+            "maximum_neck_acceleration_rad_s2": 93.43502807617188,
+            "rms_joint_jerk_rad_s3": 201.6922607421875,
+            "actuator_saturation_fraction": 0.010873015873015873,
+            "maximum_actuator_torque_nm": 137.56707763671875,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 15,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.03248322755098343,
+            "single_foot_support_fraction": [
+              0.0,
+              0.0
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.03454568237066269,
+            "maximum_neck_speed_rad_s": 2.2745141983032227,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.03248322755098343,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.45700201392173767,
+          "root_tracking_rmse_m": 0.3440098166465759,
+          "root_orientation_tracking_rmse_deg": 36.583080603495645,
+          "maximum_root_orientation_tracking_error_deg": 59.727879762419754,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.0,
+            "maximum_neck_acceleration_rad_s2": 94.50618743896484,
+            "rms_joint_jerk_rad_s3": 208.84774780273438,
+            "actuator_saturation_fraction": 0.012301587301587301,
+            "maximum_actuator_torque_nm": 138.35186767578125,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        }
+      ],
+      "automatic_resets": 0,
+      "pose_writes_after_initial_reset": false,
+      "clinical_injury_validated": false
+    },
+    {
+      "motion": "staged_prone",
+      "reference_description": "Authored staged targets; NOT motion capture",
+      "seed": 131,
+      "num_envs": 16,
+      "steps": 480,
+      "settling_steps": 30,
+      "dt": 0.03333333333333333,
+      "checkpoint_sha256": "30996e88f9cf0d357aac76554808f4126b2788c94e4cd6838ec432644a231a1e",
+      "checkpoint_training_velocity_convention": "pre-review: origin reference written as pelvis COM velocity",
+      "telemetry_sha256": "9cc6de7a6c2579eaab4424c515e1733082537399b2e0504bef954c353285c4f0",
+      "success_rate": 0.0,
+      "model_screen": {
+        "passed": true,
+        "reasons": [],
+        "clinical_injury_validated": false
+      },
+      "per_environment": [
+        {
+          "body": 0,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.03452247008681297,
+            "single_foot_support_fraction": [
+              0.0,
+              0.0
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.032822463661432266,
+            "maximum_neck_speed_rad_s": 2.891451358795166,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.03452247008681297,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.45757347345352173,
+          "root_tracking_rmse_m": 0.34860995411872864,
+          "root_orientation_tracking_rmse_deg": 36.75108952253866,
+          "maximum_root_orientation_tracking_error_deg": 59.69935640059992,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.000000238418579,
+            "maximum_neck_acceleration_rad_s2": 115.24164581298828,
+            "rms_joint_jerk_rad_s3": 209.74374389648438,
+            "actuator_saturation_fraction": 0.01119047619047619,
+            "maximum_actuator_torque_nm": 150.56468200683594,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 1,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.03350294753909111,
+            "single_foot_support_fraction": [
+              0.0,
+              0.0
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.030589040368795395,
+            "maximum_neck_speed_rad_s": 2.9093172550201416,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.03350294753909111,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.45739999413490295,
+          "root_tracking_rmse_m": 0.34751877188682556,
+          "root_orientation_tracking_rmse_deg": 36.700088408482635,
+          "maximum_root_orientation_tracking_error_deg": 59.750266158553345,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.0,
+            "maximum_neck_acceleration_rad_s2": 117.4258041381836,
+            "rms_joint_jerk_rad_s3": 224.35675048828125,
+            "actuator_saturation_fraction": 0.010793650793650795,
+            "maximum_actuator_torque_nm": 151.9709930419922,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 2,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.03280772268772125,
+            "single_foot_support_fraction": [
+              0.0,
+              0.0
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.031707096844911575,
+            "maximum_neck_speed_rad_s": 2.9102258682250977,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.03280772268772125,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4574282467365265,
+          "root_tracking_rmse_m": 0.3401964008808136,
+          "root_orientation_tracking_rmse_deg": 36.72483242214893,
+          "maximum_root_orientation_tracking_error_deg": 60.228499020491704,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.0,
+            "maximum_neck_acceleration_rad_s2": 118.4674301147461,
+            "rms_joint_jerk_rad_s3": 216.80010986328125,
+            "actuator_saturation_fraction": 0.009761904761904762,
+            "maximum_actuator_torque_nm": 151.66781616210938,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 3,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.03338175266981125,
+            "single_foot_support_fraction": [
+              0.0,
+              0.0
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.03452133759856224,
+            "maximum_neck_speed_rad_s": 2.8677492141723633,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.03338175266981125,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4575071930885315,
+          "root_tracking_rmse_m": 0.3494012951850891,
+          "root_orientation_tracking_rmse_deg": 36.63746275155246,
+          "maximum_root_orientation_tracking_error_deg": 59.86294169372138,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.0,
+            "maximum_neck_acceleration_rad_s2": 113.82687377929688,
+            "rms_joint_jerk_rad_s3": 217.3689422607422,
+            "actuator_saturation_fraction": 0.010238095238095239,
+            "maximum_actuator_torque_nm": 148.64027404785156,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 4,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.035390835255384445,
+            "single_foot_support_fraction": [
+              0.0,
+              0.0
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.03153369203209877,
+            "maximum_neck_speed_rad_s": 2.9543700218200684,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.035390835255384445,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.45713523030281067,
+          "root_tracking_rmse_m": 0.3446734845638275,
+          "root_orientation_tracking_rmse_deg": 36.54965576005379,
+          "maximum_root_orientation_tracking_error_deg": 59.799094098898365,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.0,
+            "maximum_neck_acceleration_rad_s2": 117.24504852294922,
+            "rms_joint_jerk_rad_s3": 218.5202178955078,
+            "actuator_saturation_fraction": 0.011031746031746031,
+            "maximum_actuator_torque_nm": 151.1595458984375,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 5,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.032462578266859055,
+            "single_foot_support_fraction": [
+              0.0,
+              0.0
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.03566182777285576,
+            "maximum_neck_speed_rad_s": 2.9874093532562256,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.032462578266859055,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.457400381565094,
+          "root_tracking_rmse_m": 0.34445083141326904,
+          "root_orientation_tracking_rmse_deg": 36.88103987172802,
+          "maximum_root_orientation_tracking_error_deg": 60.21774201609602,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.0,
+            "maximum_neck_acceleration_rad_s2": 96.65631103515625,
+            "rms_joint_jerk_rad_s3": 220.11715698242188,
+            "actuator_saturation_fraction": 0.009444444444444445,
+            "maximum_actuator_torque_nm": 139.1308135986328,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 6,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.03320872783660889,
+            "single_foot_support_fraction": [
+              0.0,
+              0.0
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.03322913497686386,
+            "maximum_neck_speed_rad_s": 2.9870309829711914,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.03320872783660889,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4572371244430542,
+          "root_tracking_rmse_m": 0.34970834851264954,
+          "root_orientation_tracking_rmse_deg": 36.61463977496909,
+          "maximum_root_orientation_tracking_error_deg": 59.845427694518825,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.0,
+            "maximum_neck_acceleration_rad_s2": 95.9305419921875,
+            "rms_joint_jerk_rad_s3": 216.92800903320312,
+            "actuator_saturation_fraction": 0.011031746031746031,
+            "maximum_actuator_torque_nm": 139.55819702148438,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 7,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.03210882470011711,
+            "single_foot_support_fraction": [
+              0.0,
+              0.0
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.03326015919446945,
+            "maximum_neck_speed_rad_s": 2.4173762798309326,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.03210882470011711,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.45746904611587524,
+          "root_tracking_rmse_m": 0.34497717022895813,
+          "root_orientation_tracking_rmse_deg": 36.75486080110022,
+          "maximum_root_orientation_tracking_error_deg": 60.17704852229465,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.0,
+            "maximum_neck_acceleration_rad_s2": 94.13371276855469,
+            "rms_joint_jerk_rad_s3": 218.34490966796875,
+            "actuator_saturation_fraction": 0.009285714285714286,
+            "maximum_actuator_torque_nm": 137.48550415039062,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 8,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.03612957149744034,
+            "single_foot_support_fraction": [
+              0.0,
+              0.0
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.03253312408924103,
+            "maximum_neck_speed_rad_s": 2.3720626831054688,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.03612957149744034,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.45736199617385864,
+          "root_tracking_rmse_m": 0.34872445464134216,
+          "root_orientation_tracking_rmse_deg": 36.73826916247699,
+          "maximum_root_orientation_tracking_error_deg": 59.63242549986969,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.0,
+            "maximum_neck_acceleration_rad_s2": 95.28349304199219,
+            "rms_joint_jerk_rad_s3": 208.3182373046875,
+            "actuator_saturation_fraction": 0.011349206349206348,
+            "maximum_actuator_torque_nm": 138.9091796875,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 9,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.0347687304019928,
+            "single_foot_support_fraction": [
+              0.0,
+              0.0
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.03144058957695961,
+            "maximum_neck_speed_rad_s": 2.54704213142395,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.0347687304019928,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.45700564980506897,
+          "root_tracking_rmse_m": 0.34432604908943176,
+          "root_orientation_tracking_rmse_deg": 36.51045588818944,
+          "maximum_root_orientation_tracking_error_deg": 59.76073258797355,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.0,
+            "maximum_neck_acceleration_rad_s2": 97.54944610595703,
+            "rms_joint_jerk_rad_s3": 219.35145568847656,
+            "actuator_saturation_fraction": 0.010714285714285714,
+            "maximum_actuator_torque_nm": 140.1463623046875,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 10,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.03427789360284805,
+            "single_foot_support_fraction": [
+              0.0,
+              0.0
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.03357367962598801,
+            "maximum_neck_speed_rad_s": 2.5367136001586914,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.03427789360284805,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.45719972252845764,
+          "root_tracking_rmse_m": 0.3522140681743622,
+          "root_orientation_tracking_rmse_deg": 36.586560901197295,
+          "maximum_root_orientation_tracking_error_deg": 59.772568141361255,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.0,
+            "maximum_neck_acceleration_rad_s2": 98.24629974365234,
+            "rms_joint_jerk_rad_s3": 216.61915588378906,
+            "actuator_saturation_fraction": 0.011031746031746031,
+            "maximum_actuator_torque_nm": 140.696044921875,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 11,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.0357968732714653,
+            "single_foot_support_fraction": [
+              0.0,
+              0.0
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.03479377180337906,
+            "maximum_neck_speed_rad_s": 2.874903440475464,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.0357968732714653,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4574791193008423,
+          "root_tracking_rmse_m": 0.3463519811630249,
+          "root_orientation_tracking_rmse_deg": 36.46922330884762,
+          "maximum_root_orientation_tracking_error_deg": 59.78119969255249,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.0,
+            "maximum_neck_acceleration_rad_s2": 114.56400299072266,
+            "rms_joint_jerk_rad_s3": 210.4264373779297,
+            "actuator_saturation_fraction": 0.010714285714285714,
+            "maximum_actuator_torque_nm": 149.30532836914062,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 12,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.03214285150170326,
+            "single_foot_support_fraction": [
+              0.0,
+              0.0
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.03442173823714256,
+            "maximum_neck_speed_rad_s": 2.872600555419922,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.03214285150170326,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4576365053653717,
+          "root_tracking_rmse_m": 0.34252530336380005,
+          "root_orientation_tracking_rmse_deg": 36.770708379938355,
+          "maximum_root_orientation_tracking_error_deg": 59.98452438697067,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.0,
+            "maximum_neck_acceleration_rad_s2": 115.16960144042969,
+            "rms_joint_jerk_rad_s3": 220.76144409179688,
+            "actuator_saturation_fraction": 0.010158730158730159,
+            "maximum_actuator_torque_nm": 148.78550720214844,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 13,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.03268272429704666,
+            "single_foot_support_fraction": [
+              0.0,
+              0.0
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.03505224362015724,
+            "maximum_neck_speed_rad_s": 2.172844886779785,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.03268272429704666,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4575892686843872,
+          "root_tracking_rmse_m": 0.34725475311279297,
+          "root_orientation_tracking_rmse_deg": 36.654797925416204,
+          "maximum_root_orientation_tracking_error_deg": 60.016188148943556,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.000000238418579,
+            "maximum_neck_acceleration_rad_s2": 95.30841827392578,
+            "rms_joint_jerk_rad_s3": 206.70350646972656,
+            "actuator_saturation_fraction": 0.010238095238095239,
+            "maximum_actuator_torque_nm": 138.434326171875,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 14,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.03358132392168045,
+            "single_foot_support_fraction": [
+              0.0,
+              0.0
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.032699551433324814,
+            "maximum_neck_speed_rad_s": 2.311678647994995,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.03358132392168045,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4570399820804596,
+          "root_tracking_rmse_m": 0.34403717517852783,
+          "root_orientation_tracking_rmse_deg": 36.599610787830315,
+          "maximum_root_orientation_tracking_error_deg": 59.73039089679875,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.0,
+            "maximum_neck_acceleration_rad_s2": 93.81416320800781,
+            "rms_joint_jerk_rad_s3": 211.80877685546875,
+            "actuator_saturation_fraction": 0.011031746031746031,
+            "maximum_actuator_torque_nm": 137.09716796875,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        },
+        {
+          "body": 15,
+          "task_passed": false,
+          "physical_task": {
+            "passed": false,
+            "continuous_first_attempt": true,
+            "initial_eligible": true,
+            "no_termination_including_settling": true,
+            "time_to_success_s": null,
+            "mean_forward_speed_m_s": 0.03242304176092148,
+            "single_foot_support_fraction": [
+              0.0,
+              0.0
+            ]
+          },
+          "screening": {
+            "passed": false,
+            "reasons": [
+              "measured joint limit excursion exceeds0.02rad"
+            ],
+            "head_support_violation": false,
+            "longest_head_support_s": 0.0,
+            "maximum_limit_excursion_rad": 0.03378666564822197,
+            "maximum_neck_speed_rad_s": 2.9023027420043945,
+            "clinical_injury_validated": false,
+            "interpretation": "engineering screening only; not a fracture or biological safety model"
+          },
+          "continuous_first_attempt": true,
+          "success": false,
+          "mean_forward_speed_m_s": 0.03242304176092148,
+          "time_to_success_s": null,
+          "joint_tracking_rmse_rad": 0.4574807584285736,
+          "root_tracking_rmse_m": 0.3438302278518677,
+          "root_orientation_tracking_rmse_deg": 36.75587667095568,
+          "maximum_root_orientation_tracking_error_deg": 59.96188808393671,
+          "controls": {
+            "maximum_target_rate_rad_s": 6.000000953674316,
+            "maximum_neck_target_rate_rad_s": 2.0,
+            "maximum_neck_acceleration_rad_s2": 116.72618103027344,
+            "rms_joint_jerk_rad_s3": 222.27935791015625,
+            "actuator_saturation_fraction": 0.009444444444444445,
+            "maximum_actuator_torque_nm": 150.26016235351562,
+            "clinical_injury_validated": false
+          },
+          "maximum_free_root_actuator_wrench": 0.0
+        }
+      ],
+      "automatic_resets": 0,
+      "pose_writes_after_initial_reset": false,
+      "clinical_injury_validated": false
+    }
+  ],
+  "evaluation_seeds_are_development_conditions": true,
+  "sampling": {
+    "physics_hz": 240,
+    "recorded_hz": 30,
+    "substep_peak_forces_not_recorded": true
+  },
+  "engineering_caps": {
+    "joint_limit_excursion_rad": 0.02,
+    "sampled_neck_speed_rad_s": 3.0,
+    "sustained_head_support_N": 5.0,
+    "head_support_seconds": 0.1,
+    "clinical_injury_thresholds": false
+  },
+  "verification": {
+    "main_passed": 135,
+    "main_optional_skipped": 36,
+    "native_supported_subset_passed": 164,
+    "native_neuro_dependent_test_files_excluded": 6,
+    "counts_overlap": true
+  },
+  "reference_asset_revision": "fbe1a36e878f036d6bf5521defb8eb3b8ab4170d",
+  "walking_source_sha256": "32d082c3599bc40aac50b1afa196ff1e2cf3842bb40f0541ab088845f6328a41",
+  "raw_traces_source_or_weights_included": false,
+  "comparison_frame_sources": [
+    {
+      "kind": "prior_G1_robot",
+      "source_video_sha256": "859bb11798bf75e37d06db7429eb9728628687819edd7630bfbea85df69d09fc",
+      "zero_based_frame": 69,
+      "fps": 50
+    },
+    {
+      "kind": "human_physical_prototype",
+      "source_video_sha256": "225486b2d80fe38595b77d7a8fa5a0f564febb49e378cd33d7da97656d32178c",
+      "zero_based_frame": 83,
+      "fps": 30
+    }
+  ]
+}

@@ -4,6 +4,11 @@
 
 ## Experimental setup
 
+The sections below describe the original G1 study. The later
+[articulated human experiment](human-motion.md) has a different 28-coordinate
+body and a new motor policy. G1 success percentages cannot be transferred
+to that body. Neither experiment validates clinical injury risk.
+
 The virtual body is Unitree G1, the environment uses NVIDIA Isaac Lab / Newton,
 and motor learning uses PPO. A 360-region connectivity-informed activity model
 responds to body motion, projected gravity, and movement commands. Regional

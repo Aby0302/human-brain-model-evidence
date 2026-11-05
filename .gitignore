@@ -45,3 +45,17 @@
 !/videos/continuous-fall-recovery.mp4
 !/images/continuous-fall-recovery.png
 !/previews/continuous-fall-recovery.gif
+!/videos/human-walking-prototype.mp4
+!/images/human-walking-frame.png
+!/images/human-walking-measurements.png
+!/videos/human-recovery-prototype.mp4
+!/images/human-recovery-sequence.png
+!/images/human-recovery-measurements.png
+!/videos/human-getup-reference.mp4
+!/images/human-getup-reference-sequence.png
+!/images/human-body-comparison.png
+!/previews/human-walking-prototype.gif
+!/previews/human-recovery-prototype.gif
+!/previews/human-getup-reference.gif
+!/metadata/human-motion.json
+!/docs/human-motion.md

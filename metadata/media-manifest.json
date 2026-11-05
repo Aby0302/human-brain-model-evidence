@@ -1,6 +1,6 @@
 {
-  "publication_date": "2026-11-05",
-  "revision": "Motor skill development: running, physical stairs and continuous recovery",
+  "publication_date": "2026-11-06",
+  "revision": "Articulated human research body: measured prototype and unresolved recovery",
   "language": "en",
   "branding": "RETAILERWAY LLC",
   "media_only": true,
@@ -442,6 +442,162 @@
       "environment": 6,
       "visible_body_success": true,
       "whole_batch_success_rate": 0.875
+    },
+    {
+      "file": "videos/human-walking-prototype.mp4",
+      "bytes": 1575197,
+      "sha256": "b69617b0c005a5b705ee8329f94f8331ec527324d3036e5a25eb02bde44496ed",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "video": {
+        "width": 1440,
+        "height": 700,
+        "frames": 480,
+        "fps": "30/1",
+        "duration_seconds": 16.0,
+        "playback_speed": 1.0
+      }
+    },
+    {
+      "file": "images/human-walking-frame.png",
+      "bytes": 213202,
+      "sha256": "83291c259d6cf7115060c4a5ba51d1327c873c41e3e3bb766f76fbf3f5030d7d",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "image": {
+        "width": 1440,
+        "height": 700,
+        "frames": 1
+      }
+    },
+    {
+      "file": "images/human-walking-measurements.png",
+      "bytes": 432192,
+      "sha256": "814f4149ed667a887ba01c8770bd7ebb1cf9ff06a05f9718c6d9eda0b3b5542f",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "image": {
+        "width": 1800,
+        "height": 1650,
+        "frames": 1
+      }
+    },
+    {
+      "file": "videos/human-recovery-prototype.mp4",
+      "bytes": 766594,
+      "sha256": "55ef3cd66b074e9c6b130d6eac35b18a418f6e26abb439cf383d545f497a6d22",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "video": {
+        "width": 1440,
+        "height": 700,
+        "frames": 480,
+        "fps": "30/1",
+        "duration_seconds": 16.0,
+        "playback_speed": 1.0
+      }
+    },
+    {
+      "file": "images/human-recovery-sequence.png",
+      "bytes": 352083,
+      "sha256": "13ac926bfff05667bc1d4db12187165de6a0af9b5edef5cfe7801095195b1af0",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "image": {
+        "width": 1440,
+        "height": 700,
+        "frames": 1
+      }
+    },
+    {
+      "file": "images/human-recovery-measurements.png",
+      "bytes": 260789,
+      "sha256": "49b7eed57e94945bb875dd55b6a3339f86314193cf412839e43c58764a838dd6",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "image": {
+        "width": 1800,
+        "height": 1650,
+        "frames": 1
+      }
+    },
+    {
+      "file": "videos/human-getup-reference.mp4",
+      "bytes": 341058,
+      "sha256": "0942083b9bc65acb37c32fd4b04a6b1d72be91128c1074e9a25fad9e6215bc0b",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "video": {
+        "width": 1440,
+        "height": 700,
+        "frames": 330,
+        "fps": "30/1",
+        "duration_seconds": 11.0,
+        "playback_speed": 1.0
+      }
+    },
+    {
+      "file": "images/human-getup-reference-sequence.png",
+      "bytes": 215851,
+      "sha256": "379770fa42770070289e1f04c92a5f9a3a3fcb0b477fb26a30863d1d504fd108",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "image": {
+        "width": 1440,
+        "height": 700,
+        "frames": 1
+      }
+    },
+    {
+      "file": "images/human-body-comparison.png",
+      "bytes": 205672,
+      "sha256": "45b725fc64c7bae282c434b5fec41ef79a4eee31130e09d74ab66663d672de88",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "image": {
+        "width": 1440,
+        "height": 990,
+        "frames": 1
+      }
+    },
+    {
+      "file": "previews/human-walking-prototype.gif",
+      "bytes": 3137560,
+      "sha256": "15076ee0b49de503eb7bfe2e9af37fc1f53d682f5dc467a3ec42b10cf1057985",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "image": {
+        "width": 720,
+        "height": 350,
+        "frames": 80,
+        "duration_seconds": 8.0
+      }
+    },
+    {
+      "file": "previews/human-recovery-prototype.gif",
+      "bytes": 2262921,
+      "sha256": "d8488eb859bf9ed58ea117482269e345b69c6e2c316ed79cc5482428dc4dc873",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "image": {
+        "width": 720,
+        "height": 350,
+        "frames": 80,
+        "duration_seconds": 8.0
+      }
+    },
+    {
+      "file": "previews/human-getup-reference.gif",
+      "bytes": 963636,
+      "sha256": "112239c9cc82742cb57d1ecc8a1c12d579d167b516eb7a1dfd9807af09ab6e33",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "image": {
+        "width": 720,
+        "height": 350,
+        "frames": 80,
+        "duration_seconds": 8.0
+      }
     }
   ],
   "new_experiments_added": true,

@@ -9,7 +9,26 @@ walking policy. Experiment date: **November 5, 2026**.
 **This repository contains documentation and evidence media only. Project source
 code, training scripts, model weights, and raw brain data are not published.**
 
+## Articulated human motion — November 6
+
+A new human research body adds three neck axes, an articulated trunk,
+self-collisions and actual head-contact measurements. Natural human walking
+and recovery remain **experimental: 0/48 final attempts qualified for each**.
+The earlier robot success rates below do not establish human neck safety.
+
+[![Human recovery prototype — RETAILERWAY LLC](previews/human-recovery-prototype.gif)](videos/human-recovery-prototype.mp4)
+
+[Actual recovery prototype](videos/human-recovery-prototype.mp4) ·
+[Actual walking prototype](videos/human-walking-prototype.mp4) ·
+[Authored target replay — not learned physics](videos/human-getup-reference.mp4) ·
+[Human motion report and remaining failures](docs/human-motion.md).
+
 ## Running, stairs and recovery
+
+These are **robot-body task results**. Its fixed head joint and disabled
+self-collisions do not validate human recovery or neck safety. A separate
+[articulated human motion experiment](docs/human-motion.md) adds a moving
+neck, trunk articulation, self-collisions and measured head-contact checks.
 
 | New motor skill | Primary first-attempt result |
 | --- | --- |
