@@ -1,0 +1,122 @@
+{
+  "publication_date": "2026-11-05",
+  "media_only": true,
+  "code_or_model_weights_included": false,
+  "files": [
+    {
+      "file": "images/fall-activity.png",
+      "bytes": 465182,
+      "sha256": "d15f7807175235339c7a2817ec2ba8f77ec6994890190388f1fa2934337530aa"
+    },
+    {
+      "file": "images/human-eeg-reference.png",
+      "bytes": 162450,
+      "sha256": "3deac8e76899db46da79925ed83727f648ee4703b030d477c530794f7b5e2825"
+    },
+    {
+      "file": "images/fall-frame.png",
+      "bytes": 108900,
+      "sha256": "b3b35b69fd1272980d53a204c86369f492254a057f6a79826ae67c01193a9a4f"
+    },
+    {
+      "file": "images/walking-frames.png",
+      "bytes": 275118,
+      "sha256": "459f9de6b89568048ab455ac0955108e8ba6fd0e16994ec947a6b330b5e3b7a7"
+    },
+    {
+      "file": "images/training-progress.png",
+      "bytes": 109015,
+      "sha256": "ed1b5451f85a332a35135f9999ccb1da919165df707e8ad8a29a4c66c897f654"
+    },
+    {
+      "file": "previews/fall-activity.gif",
+      "bytes": 1302903,
+      "sha256": "ea37bb961775247222ebdd2c42751425d31fed2b6dba823db6448b06bc75dd75"
+    },
+    {
+      "file": "previews/walking.gif",
+      "bytes": 1372930,
+      "sha256": "16a4ec068d6a42ef49cd92eb8f83ec15a01cfefff7649329a7e5b6c93ef7797e"
+    },
+    {
+      "file": "videos/fall-with-activity.mp4",
+      "bytes": 360141,
+      "sha256": "04838986ecb1aa9241ff77cac9e9e747772c8a63ec892e30df72d29d4954a1a4",
+      "video": {
+        "codec_name": "h264",
+        "width": 1600,
+        "height": 670,
+        "avg_frame_rate": "25/1",
+        "nb_read_frames": "151",
+        "duration_s": 6.04
+      },
+      "full_decode_passed": true,
+      "playback_speed": 0.5,
+      "source_kind": "actual_learning_capture"
+    },
+    {
+      "file": "videos/fall-learning-raw.mp4",
+      "bytes": 1797084,
+      "sha256": "0e5fc002f24e37ee510aa44ba21bd40a5b88b29562077024bfad9496d39f7fcd",
+      "video": {
+        "codec_name": "h264",
+        "width": 960,
+        "height": 540,
+        "avg_frame_rate": "50/1",
+        "nb_read_frames": "1440",
+        "duration_s": 28.8
+      },
+      "full_decode_passed": true,
+      "playback_speed": 1.0,
+      "source_kind": "actual_learning_capture"
+    },
+    {
+      "file": "videos/walking-comparison.mp4",
+      "bytes": 928735,
+      "sha256": "376fe8fe666ae7705d2a7b744a2e95c8b0228cbf207a5c123b4ba0b3171ae857",
+      "video": {
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 540,
+        "avg_frame_rate": "25/1",
+        "nb_read_frames": "250",
+        "duration_s": 10.0
+      },
+      "full_decode_passed": true,
+      "playback_speed": 1.0,
+      "source_kind": "saved_policy_reexecution"
+    },
+    {
+      "file": "videos/walking-early.mp4",
+      "bytes": 1093599,
+      "sha256": "7e4f66679fc9edbc5d4df9ea9449607c1f4f4d2104444b63cb9957f9cb320ebf",
+      "video": {
+        "codec_name": "h264",
+        "width": 1280,
+        "height": 720,
+        "avg_frame_rate": "25/1",
+        "nb_read_frames": "250",
+        "duration_s": 10.0
+      },
+      "full_decode_passed": true,
+      "playback_speed": 1.0,
+      "source_kind": "saved_policy_reexecution"
+    },
+    {
+      "file": "videos/walking-trained.mp4",
+      "bytes": 1860444,
+      "sha256": "130f0241183bb1f7f2474b2f6993b14a180848b9cbd7eaff136c7172f35e2570",
+      "video": {
+        "codec_name": "h264",
+        "width": 1280,
+        "height": 720,
+        "avg_frame_rate": "25/1",
+        "nb_read_frames": "500",
+        "duration_s": 20.0
+      },
+      "full_decode_passed": true,
+      "playback_speed": 1.0,
+      "source_kind": "saved_policy_reexecution"
+    }
+  ]
+}

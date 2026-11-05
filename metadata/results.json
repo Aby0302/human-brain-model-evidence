@@ -1,0 +1,161 @@
+{
+  "publication": "human-brain-model-evidence",
+  "date": "2026-11-05",
+  "scope": "selected aggregate results only; no project source, weights or raw brain data",
+  "primary_fall_analysis": {
+    "completed_learning_updates": 60,
+    "num_environments": 32,
+    "total_environment_steps": 46080,
+    "total_simulated_seconds": 921.6,
+    "total_falls": 3,
+    "timeouts": 32,
+    "analyzed_isolated_falls": 3,
+    "fall_environments": 3,
+    "matched_control_windows": 3,
+    "control_matching": "exact episode age; closest training step; no reused control samples",
+    "controls_do_not_match": [
+      "kinematics",
+      "stochastic policy actions"
+    ],
+    "window_seconds": [
+      -1.0,
+      1.0
+    ],
+    "baseline_seconds": [
+      -1.0,
+      -0.6
+    ],
+    "activity_units": "dimensionless",
+    "sample_hz_simulation_clock": 50.0,
+    "nyquist_hz_simulation_clock": 25.0,
+    "biological_time_calibrated": false,
+    "EEG_forward_model_present": false,
+    "emotion_labels_present": false,
+    "electrical_emotional_human_similarity": "not_evaluable",
+    "no_reset_replay_pre_fall_max_abs_error": 1.573571843382915e-07,
+    "no_reset_replay_scope": "offline E/I recomputation only; recorded body inputs include actual body reset; not physical recovery",
+    "post_fall_scope": "new episode after automatic reset; no continued post-impact recovery observed",
+    "statistical_scope": "descriptive; 3 events from one seed and one continuation; no inferential emotion or similarity test"
+  },
+  "fall_events": [
+    {
+      "environment": 8,
+      "simulation_time_s": 21.46,
+      "episode_age_s": 1.46,
+      "control_environment": 0,
+      "control_episode_age_s": 1.46,
+      "terminal_mean_E": 0.2865716814994812,
+      "terminal_mean_I": 0.3660743832588196,
+      "next_step_start_mean_E": 0.10000000149011612,
+      "next_step_start_mean_I": 0.10000000149011612,
+      "terminal_motor_E_minus_matched_control": 0.02736850082874298,
+      "terminal_other_E_minus_matched_control": 0.0002444956626277417
+    },
+    {
+      "environment": 26,
+      "simulation_time_s": 21.64,
+      "episode_age_s": 1.6400000000000001,
+      "control_environment": 1,
+      "control_episode_age_s": 1.6400000000000001,
+      "terminal_mean_E": 0.28368261456489563,
+      "terminal_mean_I": 0.3859347105026245,
+      "next_step_start_mean_E": 0.10000000149011612,
+      "next_step_start_mean_I": 0.10000000149011612,
+      "terminal_motor_E_minus_matched_control": 0.02785702981054783,
+      "terminal_other_E_minus_matched_control": 0.0003183257067576051
+    },
+    {
+      "environment": 2,
+      "simulation_time_s": 21.96,
+      "episode_age_s": 1.96,
+      "control_environment": 3,
+      "control_episode_age_s": 1.96,
+      "terminal_mean_E": 0.2738434672355652,
+      "terminal_mean_I": 0.41437241435050964,
+      "next_step_start_mean_E": 0.10000000149011612,
+      "next_step_start_mean_I": 0.10000000149011612,
+      "terminal_motor_E_minus_matched_control": 0.025419767946004868,
+      "terminal_other_E_minus_matched_control": 0.0003203691740054637
+    }
+  ],
+  "separate_video_learning_run": {
+    "num_envs": 32,
+    "actual_additional_updates": 60,
+    "steps_per_environment": 1440,
+    "total_environment_steps": 46080,
+    "total_simulated_seconds": 921.6,
+    "fall_terminations": 6,
+    "timeout_terminations": 32,
+    "captured_environment": 8
+  },
+  "video_event": {
+    "captured_environment": 8,
+    "fall_control_step": 1061,
+    "fall_simulation_time_s": 21.22,
+    "clip_relative_times_s": [
+      -1.0,
+      2.0
+    ],
+    "frames": 151,
+    "fps": 25.0,
+    "playback_speed": 0.5,
+    "duration_s": 6.04,
+    "relationship_to_primary_analysis": "separate new learning run; not the original three-fall trace; counts are not pooled"
+  },
+  "walking_evaluation": {
+    "seeds": [
+      47,
+      97,
+      131
+    ],
+    "environments_per_seed": 16,
+    "seconds_per_environment": 20,
+    "aggregate_simulation_seconds": 960,
+    "total_falls": 1,
+    "mean_forward_speed_m_s": 0.34911591593424474,
+    "target_forward_speed_m_s": 0.5,
+    "general_locomotion_validation_claimed": false
+  },
+  "walking_replay": {
+    "early_100": {
+      "seed": 47,
+      "duration_s": 10.0,
+      "viewed_env_mean_speed_m_s": 0.35911383597180246,
+      "viewed_env_falls": 8,
+      "all_16_env_falls": 125
+    },
+    "trained_1500": {
+      "seed": 47,
+      "duration_s": 20.0,
+      "viewed_env_mean_speed_m_s": 0.35327599208056926,
+      "viewed_env_falls": 0,
+      "all_16_env_falls": 0
+    }
+  },
+  "human_reference": {
+    "participants": 20,
+    "published_trials": 962,
+    "samples_per_trial": 2501,
+    "sample_hz": 1000,
+    "time_window_s": [
+      -0.5,
+      2.0
+    ],
+    "unit": "microvolts",
+    "sensor": "Cz",
+    "event": "support_surface_perturbation",
+    "emotion_labels": false,
+    "mean_method": "equal-participant mean of within-participant trial means; all published conditions pooled",
+    "uncertainty": "plus/minus 1 SEM across participant means",
+    "original_doi": "10.5061/dryad.qz612jm9x",
+    "license": "CC0-1.0",
+    "raw_data_included": false
+  },
+  "software_checks": {
+    "main_environment_passed": 91,
+    "main_environment_optional_skipped": 7,
+    "simulation_environment_subset_passed": 28,
+    "unique_tests_passed_across_environments": 98,
+    "note": "software checks do not establish biological validity"
+  }
+}
