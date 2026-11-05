@@ -1,79 +1,153 @@
 {
   "publication_date": "2026-11-05",
+  "revision": "English labels and RETAILERWAY LLC branding",
+  "language": "en",
+  "branding": "RETAILERWAY LLC",
   "media_only": true,
   "code_or_model_weights_included": false,
+  "experiment_results_changed": false,
+  "frame_counts_and_playback_rates_preserved": true,
   "files": [
     {
       "file": "images/fall-activity.png",
-      "bytes": 465182,
-      "sha256": "d15f7807175235339c7a2817ec2ba8f77ec6994890190388f1fa2934337530aa"
+      "bytes": 488381,
+      "sha256": "73ac0855bbaf994f81f028c4e47a246bb71f2ced1b5140a708f5d76766c74a45",
+      "previous_publication_sha256": "d15f7807175235339c7a2817ec2ba8f77ec6994890190388f1fa2934337530aa",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "image": {
+        "width": 2450,
+        "height": 1708,
+        "frames": 1
+      }
     },
     {
       "file": "images/human-eeg-reference.png",
-      "bytes": 162450,
-      "sha256": "3deac8e76899db46da79925ed83727f648ee4703b030d477c530794f7b5e2825"
+      "bytes": 169101,
+      "sha256": "a3f8d7f5f92323bca8a5b786b51e3933b44af2f5fc79cf5e47af40197c910dd6",
+      "previous_publication_sha256": "3deac8e76899db46da79925ed83727f648ee4703b030d477c530794f7b5e2825",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "image": {
+        "width": 1940,
+        "height": 1007,
+        "frames": 1
+      }
     },
     {
       "file": "images/fall-frame.png",
-      "bytes": 108900,
-      "sha256": "b3b35b69fd1272980d53a204c86369f492254a057f6a79826ae67c01193a9a4f"
+      "bytes": 111365,
+      "sha256": "3059eb59319d273fa8b824d666660063d4a754784cd28e1c2dd479c3ba92c4d0",
+      "previous_publication_sha256": "b3b35b69fd1272980d53a204c86369f492254a057f6a79826ae67c01193a9a4f",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "image": {
+        "width": 1600,
+        "height": 710,
+        "frames": 1
+      }
     },
     {
       "file": "images/walking-frames.png",
-      "bytes": 275118,
-      "sha256": "459f9de6b89568048ab455ac0955108e8ba6fd0e16994ec947a6b330b5e3b7a7"
+      "bytes": 294005,
+      "sha256": "bc9e1295c9cfc432d5b4dba14128cd74fc217fb1cd94bf8a591416c1e86685e3",
+      "previous_publication_sha256": "459f9de6b89568048ab455ac0955108e8ba6fd0e16994ec947a6b330b5e3b7a7",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "image": {
+        "width": 1280,
+        "height": 850,
+        "frames": 1
+      }
     },
     {
       "file": "images/training-progress.png",
-      "bytes": 109015,
-      "sha256": "ed1b5451f85a332a35135f9999ccb1da919165df707e8ad8a29a4c66c897f654"
+      "bytes": 168335,
+      "sha256": "9a57a9054624796a757f39df1f75073b112e0ef2a2c7d6e9954cc5948aa0279e",
+      "previous_publication_sha256": "ed1b5451f85a332a35135f9999ccb1da919165df707e8ad8a29a4c66c897f654",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "image": {
+        "width": 2306,
+        "height": 984,
+        "frames": 1
+      }
     },
     {
       "file": "previews/fall-activity.gif",
-      "bytes": 1302903,
-      "sha256": "ea37bb961775247222ebdd2c42751425d31fed2b6dba823db6448b06bc75dd75"
+      "bytes": 1270902,
+      "sha256": "e0b5f2b50285a246efcfeb0b60437c72c04ce5fd86ad4437474e850eb37e2d6a",
+      "previous_publication_sha256": "ea37bb961775247222ebdd2c42751425d31fed2b6dba823db6448b06bc75dd75",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "image": {
+        "width": 960,
+        "height": 426,
+        "frames": 91,
+        "duration_ms": 6070
+      }
     },
     {
       "file": "previews/walking.gif",
-      "bytes": 1372930,
-      "sha256": "16a4ec068d6a42ef49cd92eb8f83ec15a01cfefff7649329a7e5b6c93ef7797e"
+      "bytes": 1309244,
+      "sha256": "44dc559444939dfd2f4f790027e4a46b262483f9e35bf1df9276f4108e1cf2c3",
+      "previous_publication_sha256": "16a4ec068d6a42ef49cd92eb8f83ec15a01cfefff7649329a7e5b6c93ef7797e",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "image": {
+        "width": 720,
+        "height": 405,
+        "frames": 60,
+        "duration_ms": 6000
+      }
     },
     {
       "file": "videos/fall-with-activity.mp4",
-      "bytes": 360141,
-      "sha256": "04838986ecb1aa9241ff77cac9e9e747772c8a63ec892e30df72d29d4954a1a4",
+      "bytes": 357813,
+      "sha256": "2604020fcc58576d74a7dfc1b6b75556383e12fda43fe500dab34c967738b861",
+      "previous_publication_sha256": "04838986ecb1aa9241ff77cac9e9e747772c8a63ec892e30df72d29d4954a1a4",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
       "video": {
         "codec_name": "h264",
         "width": 1600,
-        "height": 670,
+        "height": 710,
         "avg_frame_rate": "25/1",
         "nb_read_frames": "151",
         "duration_s": 6.04
       },
       "full_decode_passed": true,
       "playback_speed": 0.5,
-      "source_kind": "actual_learning_capture"
+      "source_kind": "actual_learning_capture",
+      "presentation": "English overlays rebuilt from original recorded frames and measurements"
     },
     {
       "file": "videos/fall-learning-raw.mp4",
-      "bytes": 1797084,
-      "sha256": "0e5fc002f24e37ee510aa44ba21bd40a5b88b29562077024bfad9496d39f7fcd",
+      "bytes": 1699746,
+      "sha256": "30e2ddcd078ba8bdf032c13988f7f3358752ed14ffd880e04790684636f89b6e",
+      "previous_publication_sha256": "0e5fc002f24e37ee510aa44ba21bd40a5b88b29562077024bfad9496d39f7fcd",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
       "video": {
         "codec_name": "h264",
         "width": 960,
-        "height": 540,
+        "height": 584,
         "avg_frame_rate": "50/1",
         "nb_read_frames": "1440",
         "duration_s": 28.8
       },
       "full_decode_passed": true,
       "playback_speed": 1.0,
-      "source_kind": "actual_learning_capture"
+      "source_kind": "actual_learning_capture",
+      "presentation": "Full original learning sequence with an added English branding/context footer"
     },
     {
       "file": "videos/walking-comparison.mp4",
-      "bytes": 928735,
-      "sha256": "376fe8fe666ae7705d2a7b744a2e95c8b0228cbf207a5c123b4ba0b3171ae857",
+      "bytes": 933305,
+      "sha256": "b33d6b4f6f6d062a5a22efaf53d8b684bf357f22ab47dd0001e2716f295e9eb1",
+      "previous_publication_sha256": "376fe8fe666ae7705d2a7b744a2e95c8b0228cbf207a5c123b4ba0b3171ae857",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
       "video": {
         "codec_name": "h264",
         "width": 1920,
@@ -84,12 +158,16 @@
       },
       "full_decode_passed": true,
       "playback_speed": 1.0,
-      "source_kind": "saved_policy_reexecution"
+      "source_kind": "saved_policy_reexecution",
+      "presentation": "English overlays rebuilt from original recorded frames and measurements"
     },
     {
       "file": "videos/walking-early.mp4",
-      "bytes": 1093599,
-      "sha256": "7e4f66679fc9edbc5d4df9ea9449607c1f4f4d2104444b63cb9957f9cb320ebf",
+      "bytes": 1090443,
+      "sha256": "6ef5232914c82daaa555cf263b23b5bcbb1118cab23bf37bf92d7cfcb0a4baf5",
+      "previous_publication_sha256": "7e4f66679fc9edbc5d4df9ea9449607c1f4f4d2104444b63cb9957f9cb320ebf",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
       "video": {
         "codec_name": "h264",
         "width": 1280,
@@ -100,12 +178,16 @@
       },
       "full_decode_passed": true,
       "playback_speed": 1.0,
-      "source_kind": "saved_policy_reexecution"
+      "source_kind": "saved_policy_reexecution",
+      "presentation": "English overlays rebuilt from original recorded frames and measurements"
     },
     {
       "file": "videos/walking-trained.mp4",
-      "bytes": 1860444,
-      "sha256": "130f0241183bb1f7f2474b2f6993b14a180848b9cbd7eaff136c7172f35e2570",
+      "bytes": 1863307,
+      "sha256": "cd8dc3c3a97a3e90f8a0edb2cd6e80759ae725a9a7b0388da7668dbccd717af4",
+      "previous_publication_sha256": "130f0241183bb1f7f2474b2f6993b14a180848b9cbd7eaff136c7172f35e2570",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
       "video": {
         "codec_name": "h264",
         "width": 1280,
@@ -116,7 +198,8 @@
       },
       "full_decode_passed": true,
       "playback_speed": 1.0,
-      "source_kind": "saved_policy_reexecution"
+      "source_kind": "saved_policy_reexecution",
+      "presentation": "English overlays rebuilt from original recorded frames and measurements"
     }
   ]
 }

@@ -1,67 +1,74 @@
-# Human Brain Model — görsel kanıt arşivi
+# Human Brain Model — Visual Evidence Archive
 
-İnsan beyni bağlantı verisinden yararlanan bölgesel bir modelin, sanal bir
-bedenin yürüme öğrenmesiyle birlikte incelendiği pilot çalışmanın raporları,
-görselleri ve gerçek simülasyon kayıtları. Yayın tarihi: **5 Kasım 2026**.
+**RETAILERWAY LLC**
 
-**Bu depo yalnızca dokümantasyon ve kanıt medyası içerir. Projenin kaynak kodu,
-eğitim betikleri, model ağırlıkları ve ham beyin verileri paylaşılmamıştır.**
+Reports, scientific figures, and recorded simulations from a pilot study of
+human-connectivity-informed regional dynamics alongside a virtual body's
+walking policy. Experiment date: **November 5, 2026**.
 
-## Düşüş ve aynı andaki bölgesel etkinlik
+**This repository contains documentation and evidence media only. Project source
+code, training scripts, model weights, and raw brain data are not published.**
 
-[![Gerçek öğrenme sırasında düşüş ve eşzamanlı etkinlik](previews/fall-activity.gif)](https://github.com/Aby0302/human-brain-model-evidence/releases/download/evidence-2026-11-05/fall-with-activity.mp4)
+## A fall and its synchronized regional activity
 
-[Videoyu aç / indir](https://github.com/Aby0302/human-brain-model-evidence/releases/download/evidence-2026-11-05/fall-with-activity.mp4)
-· [Kesintisiz 28,8 saniyelik kayıt](videos/fall-learning-raw.mp4)
-· [Bütün videolar](docs/gorsel-katalog.md)
+[![Recorded fall and synchronized activity — RETAILERWAY LLC](previews/fall-activity.gif)](https://github.com/Aby0302/human-brain-model-evidence/releases/download/evidence-2026-11-05-en/fall-with-activity.mp4)
 
-Görüntü gerçek fizik simülasyonundan alınmıştır; hareketler üretilmiş bir video
-veya hazır animasyon değildir. Sağdaki eğriler, görüntüdeki bedenin **aynı
-kontrol adımında ve otomatik sıfırlamadan önce** kaydedilen bölgesel E/I
-etkinliğidir. Altı saniyelik klip **0,5× hızda** oynatılır; üç saniyelik
-simülasyon aralığını gösterir.
+[Watch / download the video](https://github.com/Aby0302/human-brain-model-evidence/releases/download/evidence-2026-11-05-en/fall-with-activity.mp4)
+· [Full 28.8-second learning capture](videos/fall-learning-raw.mp4)
+· [All media](docs/media-catalog.md)
 
-## Ne gözlendi?
+The motion comes from a recorded physics simulation and its motor policy.
+The curves show the visible body's regional E/I activity from **the same
+control step, recorded before automatic reset**. The short clip plays at
+**0.5× speed**, displaying three seconds of simulation over 6.04 seconds.
+All published figures, videos, and GIFs carry the **RETAILERWAY LLC** stamp.
 
-| İnceleme | Kapsam | Gözlem |
+## Observations
+
+| Investigation | Scope | Observation |
 | --- | --- | --- |
-| Ana düşüş analizi | 32 ortam, 60 ek öğrenme güncellemesi, 46.080 ortam adımı | Üç ayrı ortamda 3 düşüş; 360 bölgenin E/I etkinliği 50 Hz'de kaydedildi. |
-| Görüntülü öğrenme koşusu | Ayrı bir 32 ortam / 60 güncelleme koşusu | Toplam 6 düşüş; videodaki 8 numaralı ortamda 1 düşüş. Ana analizle sayılar birleştirilmedi. |
-| Son yürüme politikasının değerlendirmesi | 3 değerlendirme tohumu, 16'şar ortam, ortam başına 20 s | Toplam 960 simülasyon saniyesinde 1 düşüş; ortalama ileri hız yaklaşık 0,349 m/s, hedef 0,5 m/s. |
-| İnsan EEG referansı | 20 katılımcı, yayımlanmış 962 deneme | Denge bozucu destek yüzeyi hareketine kilitli gerçek Cz EEG; robot düşüşü veya duygusal etiketli veri değil. |
+| Primary fall analysis | 32 environments, 60 additional learning updates, 46,080 environment steps | 3 falls in 3 environments; 360 regions' E/I activity recorded at 50 Hz. |
+| Separate learning capture | A separate 32-environment, 60-update run | 6 falls overall; 1 fall in visible environment 8. Counts were not pooled with the primary analysis. |
+| Final walking-policy evaluation | 3 evaluation seeds, 16 environments each, 20 s per environment | 1 fall across 960 aggregate simulation seconds; mean forward speed approximately 0.349 m/s against a 0.5 m/s target. |
+| Human EEG reference | 20 participants, 962 published trials | Actual Cz EEG aligned to support-surface perturbations, rather than robot impact or an emotion-labeled fall task. |
 
-Düşüş öncesinde duyusal/motor girdi alan bölgelerde etkinlik farkı gözlendi.
-Düşüşten hemen sonraki keskin azalma, **yazılımın model durumunu yeniden
-başlatmasından** kaynaklanır. Bu değişim korku, acı veya başka bir duygu ölçümü
-olarak yorumlanamaz.
+Before the falls, regions receiving sensorimotor inputs differed from
+age-matched non-fall controls. The abrupt activity drop after a fall comes
+from an **imposed software reset**. It cannot be interpreted as fear, pain,
+or another measured emotion.
 
-**İnsan benzeri elektriksel veya duygusal sinyal ürettiği henüz doğrulanmadı.**
-Model çıktıları boyutsuz bölgesel durumlardır; insan referansı mikrovolt
-cinsinden EEG'dir. Biyolojik zaman kalibrasyonu, EEG ölçüm modeli ve bağımsız
-duygu etiketleri bulunmadığından sayısal insan benzerliği skoru verilmemiştir.
+**Human-like electrical or emotional signaling has not been established.**
+Model outputs are dimensionless regional states; the human reference is EEG
+in microvolts. Biological time calibration, an EEG observation model, and
+independent affect labels are absent, so no human-similarity score is reported.
 
-## Görseller ve raporlar
+## Figures and reports
 
-![360 bölgenin düşüş çevresindeki etkinliği](images/fall-activity.png)
+![Activity around falls across all 360 regions — RETAILERWAY LLC](images/fall-activity.png)
 
-[Ayrıntılı deney raporu](docs/deney-raporu.md)
-· [Yöntem ve sınırlar](docs/yontem-ve-sinirlar.md)
-· [İnsan EEG referansı](images/human-eeg-reference.png)
-· [Kaynaklar](docs/kaynaklar.md)
+[Experiment report](docs/experiment-report.md)
+· [Methods and limitations](docs/methods-and-limitations.md)
+· [Human EEG reference](images/human-eeg-reference.png)
+· [Sources](docs/sources.md)
 
-[![Son yürüme politikasının gerçek simülasyon kaydı](previews/walking.gif)](videos/walking-trained.mp4)
+[![Recorded final-policy walking replay — RETAILERWAY LLC](previews/walking.gif)](videos/walking-trained.mp4)
 
-[Erken ve son politika: yan yana video](videos/walking-comparison.mp4).
-Bu videolar, kaydedilmiş politikaların yeniden yürütümüdür; özgün eğitim
-görüntüsü değildir. Erken ve son modeller farklı eğitim bütçeleri kullandığı
-için karşılaştırma, beyin bağlantı girdisinin bağımsız yararını kanıtlamaz.
+[Early and final policies, side by side](videos/walking-comparison.mp4).
+These walking videos are re-executions of saved policies, captured after the
+original training. Their different training budgets do not isolate the
+independent benefit of the connectivity-informed features.
 
-## Dosya bütünlüğü ve yayın kapsamı
+## Integrity and publication scope
 
-Seçilmiş videoların süreleri, kare sayıları ve SHA-256 kimlikleri
-[medya manifestinde](metadata/media-manifest.json), sayısal özetler
-[sonuç dosyasında](metadata/results.json) yer alır. Yayımlanan dosyaların
-bütünlük listesi [SHA256SUMS](SHA256SUMS) dosyasındadır.
+Video durations, frame counts, and SHA-256 digests appear in the
+[media manifest](metadata/media-manifest.json). Selected numerical results
+are in the [results summary](metadata/results.json). Published-file hashes
+are listed in [SHA256SUMS](SHA256SUMS).
 
-Kaynak kodu ve ağırlıklar bu yayının dışında tutulduğundan bu depo tek başına
-eğitimi yeniden çalıştırmaya yetmez. [Yayın kapsamı ve paylaşım sınırı](PUBLICATION.md).
+English labels and RETAILERWAY LLC branding were added to the recorded evidence;
+the experiment results and event timing were retained. The full learning
+recording includes a branding footer, so its published copy is not the
+unannotated original capture.
+
+The repository alone cannot reproduce training because source code and weights
+remain private. [Publication scope](PUBLICATION.md).
