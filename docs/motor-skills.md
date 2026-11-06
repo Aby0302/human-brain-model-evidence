@@ -16,6 +16,9 @@ separate development branch with explicit head/neck measurements.
 The [newer supported human-body recovery](supported-getup.md) passed 48/48
 declared full-prone attempts. Its separate 28-coordinate controller does
 not replace or inherit the G1 task success numbers below.
+The [later human walking and continuous recovery](human-walk-recovery.md)
+adds stationary-start walking and a nominal walk/fall/getup/walk sequence,
+with explicit harder-condition failures and unvalidated injury safety.
 
 | Skill | Primary first attempts | Additional native video conditions |
 | --- | --- | --- |

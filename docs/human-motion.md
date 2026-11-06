@@ -5,6 +5,8 @@
 **Historical prototype:** this page preserves the earlier failed profile.
 The [newer supported-recovery experiment](supported-getup.md) passed its
 declared full-prone gates; its controller and results are documented separately.
+The latest [walking and continuous recovery report](human-walk-recovery.md)
+adds qualified nominal conditions and retains its stress failures.
 
 A separate human research body now has a moving neck, articulated trunk,
 self-collisions and measured head-contact screening. **Natural human walking

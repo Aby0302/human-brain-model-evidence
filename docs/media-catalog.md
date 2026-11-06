@@ -2,6 +2,19 @@
 
 **RETAILERWAY LLC** · All current media use English labels and company stamps.
 
+## Qualified human walking and nominal continuous recovery — November 6
+
+| Recording | Duration / speed | Interpretation |
+| --- | --- | --- |
+| [Stationary-start human walking](../videos/human-walking-qualified.mp4) | 16 s; 30 fps; 1× | Selected walking actor; seed47/body0 passes; walking motion screen after1s startup;48/48 |
+| [Walk, push, fall, getup and walk](../videos/human-continuous-recovery.mp4) | 40 s; 30 fps; 1× | Three PPO actors + engineered measured routing/COM feedback; seed47/body0 passes; full-trajectory screen; nominal48/48 |
+
+Both GIF previews cover the complete corresponding recording at1× timing,
+sampled to8fps. Branded sequences, measurements and the continuous event plot
+come from those actual recordings. The report retains stronger/diagonal/
+delayed pulse failures and brief nominal head contacts; no clinical claim.
+[Report](human-walk-recovery.md) · [Derived summaries](../metadata/human-walk-recovery.json).
+
 ## Supported human-body recovery — November 6
 
 | Recording | Duration / speed | Interpretation |

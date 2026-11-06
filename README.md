@@ -3,11 +3,33 @@
 **RETAILERWAY LLC**
 
 Reports, scientific figures, and recorded simulations from a pilot study of
-human-connectivity-informed regional dynamics alongside a virtual body's
-walking policy. Experiment dates: **November 5–6, 2026**.
+human-connectivity-informed regional dynamics alongside learned motor policies
+in virtual bodies. Experiment dates: **November 5–6, 2026**.
 
 **This repository contains documentation and evidence media only. Project source
 code, training scripts, model weights, and raw brain data are not published.**
+
+## Human walking and continuous recovery — November 6
+
+Stationary-start human-body walking passed **48/48** development attempts.
+The selected three-actor controller also passed **48/48 nominal continuous
+walk → push → fall → getup → walk attempts**, with no reset or pose rewrite.
+It combines learned PPO walking/falling/getup actors with engineered measured
+routing and COM balance feedback. HCP connectivity remains fixed.
+
+[![Actual human walking, fall and recovery — RETAILERWAY LLC](previews/human-continuous-recovery.gif)](videos/human-continuous-recovery.mp4)
+
+[40-second continuous video](videos/human-continuous-recovery.mp4) ·
+[Standing-start walking](videos/human-walking-qualified.mp4) ·
+[Report, selection and limitations](docs/human-walk-recovery.md) ·
+[All derived results](metadata/human-walk-recovery.json).
+
+The nominal condition is a 200 N forward trunk pulse on flat ground. Stronger,
+diagonal and delayed pulses passed **8/16, 10/16 and 14/16**, respectively;
+all 96 selected-pipeline attempts are retained. Brief head contact occurred
+even in nominal cohorts. Passing the declared duration-based head-support
+screen does not establish human head/neck safety or general fall robustness.
+The regional curves are not validated EEG or emotions.
 
 ## Supported human-body recovery — November 6
 
@@ -23,9 +45,9 @@ ankle balance feedback; the fixed HCP features remain available to the actor.
 [Report, controls and limits](docs/supported-getup.md) ·
 [Derived results](metadata/supported-getup.json).
 
-These are flat-ground simulator development conditions. Human-body walking
-remains experimental; clinical neck safety, whole-brain and emotional EEG
-equivalence are unvalidated. The recordings contain no resets or pose writes
+These are flat-ground simulator development conditions. The later walking
+and continuous recovery results are documented above; clinical neck safety,
+whole-brain and emotional EEG equivalence remain unvalidated. The recordings contain no resets or pose writes
 after initialization and play at 1× speed.
 
 ## Earlier human prototype — retained failures

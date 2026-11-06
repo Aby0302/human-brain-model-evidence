@@ -4,8 +4,13 @@
 
 ## Experimental setup
 
+The latest [human walking and continuous recovery report](human-walk-recovery.md)
+describes the selected three-actor controller, complete nominal trajectory
+screening and retained stress failures. These are bounded development
+conditions; short head contacts and biological limitations remain explicit.
+
 The [supported prone-recovery experiment](supported-getup.md) reports the
-latest human-body recovery controller and matched motor-residual control.
+earlier standalone human-body recovery controller and matched motor-residual control.
 Its successful simulation checks do not change the biological limitations
 described here.
 

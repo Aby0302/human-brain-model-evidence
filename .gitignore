@@ -71,3 +71,16 @@
 !/images/support-component-comparison.png
 !/metadata/supported-getup.json
 !/docs/supported-getup.md
+!/metadata/human-walk-recovery.json
+!/videos/human-walking-qualified.mp4
+!/images/human-walking-qualified-frame.png
+!/images/human-walking-qualified-sequence.png
+!/images/human-walking-qualified-measurements.png
+!/previews/human-walking-qualified.gif
+!/videos/human-continuous-recovery.mp4
+!/images/human-continuous-recovery-frame.png
+!/images/human-continuous-recovery-sequence.png
+!/images/human-continuous-recovery-measurements.png
+!/images/human-continuous-recovery-events.png
+!/previews/human-continuous-recovery.gif
+!/docs/human-walk-recovery.md

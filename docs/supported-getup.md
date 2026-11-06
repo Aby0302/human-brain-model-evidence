@@ -2,6 +2,10 @@
 
 **RETAILERWAY LLC — November 6, 2026**
 
+This is the retained standalone getup report. Later human walking and
+continuous fall recovery are documented in the
+[new combined-skill report](human-walk-recovery.md).
+
 The articulated human research body now completes prone-to-standing recovery
 in **48/48 final development attempts**, including the measured head/neck
 and joint checks. A separately initialized crouch-to-stand lesson also passed
@@ -142,8 +146,9 @@ integrity are audited separately from physical success.
 This starts from an initialized prone pose. It does not demonstrate an
 unexpected fall followed by autonomous recovery routing, resumed human-body
 walking, new human-body running/climbing, general terrain robustness or
-physical-world transfer. Human-body walking remains at the earlier
-experimental status. Motion naturalness has not been scored against human
+physical-world transfer. At the time of this standalone experiment, walking
+retained its earlier experimental status; see the newer report above.
+Motion naturalness has not been scored against human
 motion capture, and the rig is not a clinical musculoskeletal injury model.
 
 The old G1 policies, earlier failed human prototypes and evidence remain

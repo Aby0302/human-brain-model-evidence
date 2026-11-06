@@ -1,6 +1,6 @@
 {
   "publication_date": "2026-11-06",
-  "revision": "Supported prone recovery: learned residual plus engineered measured-COM balance",
+  "revision": "Qualified human walking and nominal continuous recovery; stress failures retained",
   "language": "en",
   "branding": "RETAILERWAY LLC",
   "media_only": true,
@@ -725,6 +725,146 @@
         "width": 1800,
         "height": 1200,
         "frames": 1
+      }
+    },
+    {
+      "file": "videos/human-walking-qualified.mp4",
+      "bytes": 1421636,
+      "sha256": "aa8c9e7f9d90d521a496b913a75555aa9f5dabe1ca2750b487e9819bb08ba9a1",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "video": {
+        "width": 1440,
+        "height": 700,
+        "frames": 480,
+        "fps": "30/1",
+        "duration_seconds": 16.0,
+        "playback_speed": 1.0
+      }
+    },
+    {
+      "file": "images/human-walking-qualified-frame.png",
+      "bytes": 211661,
+      "sha256": "e3ed8d647208a8e74b397be23c4407afa95cb6e6b9c0e24d2c3599777bfcaa41",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "image": {
+        "width": 1440,
+        "height": 700,
+        "frames": 1
+      }
+    },
+    {
+      "file": "images/human-walking-qualified-sequence.png",
+      "bytes": 360953,
+      "sha256": "e9800818c31bfa5975604bed9f51dbeb6a065362af521a59f45e519a9f35cbee",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "image": {
+        "width": 1440,
+        "height": 700,
+        "frames": 1
+      }
+    },
+    {
+      "file": "images/human-walking-qualified-measurements.png",
+      "bytes": 408988,
+      "sha256": "a997280c97338b5d4cc217153d7e0502c573b16a6d0e9ab9337864dfd496542e",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "image": {
+        "width": 1800,
+        "height": 1650,
+        "frames": 1
+      }
+    },
+    {
+      "file": "previews/human-walking-qualified.gif",
+      "bytes": 5208307,
+      "sha256": "581d62ca3fe56f3a8ceba24e02fb294efce0352082de0bb37a0a27eea8e1fc4c",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "image": {
+        "width": 720,
+        "height": 350,
+        "frames": 128,
+        "duration_seconds": 16.01
+      }
+    },
+    {
+      "file": "videos/human-continuous-recovery.mp4",
+      "bytes": 3243962,
+      "sha256": "bf507f9dcc2867a7d1ace0230b739d5504a5789b653f74457cb5a37d3e2c6675",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "video": {
+        "width": 1440,
+        "height": 700,
+        "frames": 1200,
+        "fps": "30/1",
+        "duration_seconds": 40.0,
+        "playback_speed": 1.0
+      }
+    },
+    {
+      "file": "images/human-continuous-recovery-frame.png",
+      "bytes": 221288,
+      "sha256": "d388519ab977d91785ac99a0d1da4217db749d94a86071ec5a192087fe1ae5c8",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "image": {
+        "width": 1440,
+        "height": 700,
+        "frames": 1
+      }
+    },
+    {
+      "file": "images/human-continuous-recovery-sequence.png",
+      "bytes": 368305,
+      "sha256": "cde63d392c3d92bf99253be7244fd6ff074f16a0f3a9dd084a67453526afb7ac",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "image": {
+        "width": 1440,
+        "height": 700,
+        "frames": 1
+      }
+    },
+    {
+      "file": "images/human-continuous-recovery-measurements.png",
+      "bytes": 347027,
+      "sha256": "b245aad7ab8c70e37e91b2c0bbb38a950b9db85704193ad1ecd028384592b4a0",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "image": {
+        "width": 1800,
+        "height": 1650,
+        "frames": 1
+      }
+    },
+    {
+      "file": "images/human-continuous-recovery-events.png",
+      "bytes": 249535,
+      "sha256": "d95778d6f36fa6c9e9cbdcc79114e90ebccf400c97614192c83feb027b924922",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "image": {
+        "width": 1800,
+        "height": 1500,
+        "frames": 1
+      }
+    },
+    {
+      "file": "previews/human-continuous-recovery.gif",
+      "bytes": 11761569,
+      "sha256": "7d3d1c6adc6600e10efa63b217a8c5d12b92dfb66a6e2740a9c4c3a5124ef865",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "image": {
+        "width": 720,
+        "height": 350,
+        "frames": 320,
+        "duration_seconds": 40.01
       }
     }
   ],
