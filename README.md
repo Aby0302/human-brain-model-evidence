@@ -4,16 +4,35 @@
 
 Reports, scientific figures, and recorded simulations from a pilot study of
 human-connectivity-informed regional dynamics alongside a virtual body's
-walking policy. Experiment date: **November 5, 2026**.
+walking policy. Experiment dates: **November 5–6, 2026**.
 
 **This repository contains documentation and evidence media only. Project source
 code, training scripts, model weights, and raw brain data are not published.**
 
-## Articulated human motion — November 6
+## Supported human-body recovery — November 6
 
-A new human research body adds three neck axes, an articulated trunk,
-self-collisions and actual head-contact measurements. Natural human walking
-and recovery remain **experimental: 0/48 final attempts qualified for each**.
+The newer controller passed **48/48 full prone-to-standing attempts**, including
+the declared head/neck and joint checks. A separate crouch-rise lesson passed
+48/48. It combines a learned PPO motor residual with engineered measured-COM
+ankle balance feedback; the fixed HCP features remain available to the actor.
+
+[![Actual supported prone recovery — RETAILERWAY LLC](previews/supported-prone-recovery.gif)](videos/supported-prone-recovery.mp4)
+
+[Full recovery video](videos/supported-prone-recovery.mp4) ·
+[Separate crouch lesson](videos/crouch-to-stand.mp4) ·
+[Report, controls and limits](docs/supported-getup.md) ·
+[Derived results](metadata/supported-getup.json).
+
+These are flat-ground simulator development conditions. Human-body walking
+remains experimental; clinical neck safety, whole-brain and emotional EEG
+equivalence are unvalidated. The recordings contain no resets or pose writes
+after initialization and play at 1× speed.
+
+## Earlier human prototype — retained failures
+
+A previous human research profile added three neck axes, an articulated trunk,
+self-collisions and actual head-contact measurements. That profile qualified
+**0/48 walking and 0/48 recovery attempts**; its failed evidence is preserved.
 The earlier robot success rates below do not establish human neck safety.
 
 [![Human recovery prototype — RETAILERWAY LLC](previews/human-recovery-prototype.gif)](videos/human-recovery-prototype.mp4)

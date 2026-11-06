@@ -4,6 +4,11 @@
 
 ## Experimental setup
 
+The [supported prone-recovery experiment](supported-getup.md) reports the
+latest human-body recovery controller and matched motor-residual control.
+Its successful simulation checks do not change the biological limitations
+described here.
+
 The sections below describe the original G1 study. The later
 [articulated human experiment](human-motion.md) has a different 28-coordinate
 body and a new motor policy. G1 success percentages cannot be transferred

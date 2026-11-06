@@ -13,6 +13,10 @@ The G1 asset has a fixed head joint and disabled self-collisions. The earlier
 or neck safety. The [articulated human experiment](human-motion.md) is a
 separate development branch with explicit head/neck measurements.
 
+The [newer supported human-body recovery](supported-getup.md) passed 48/48
+declared full-prone attempts. Its separate 28-coordinate controller does
+not replace or inherit the G1 task success numbers below.
+
 | Skill | Primary first attempts | Additional native video conditions |
 | --- | --- | --- |
 | Running | 40/48 (83.3%) | 12/16 and 14/16; total 66/80 (82.5%) |

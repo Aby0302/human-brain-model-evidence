@@ -1,6 +1,6 @@
 {
   "publication_date": "2026-11-06",
-  "revision": "Articulated human research body: measured prototype and unresolved recovery",
+  "revision": "Supported prone recovery: learned residual plus engineered measured-COM balance",
   "language": "en",
   "branding": "RETAILERWAY LLC",
   "media_only": true,
@@ -597,6 +597,134 @@
         "height": 350,
         "frames": 80,
         "duration_seconds": 8.0
+      }
+    },
+    {
+      "file": "videos/supported-prone-recovery.mp4",
+      "bytes": 632901,
+      "sha256": "bf1e9e5011260125ad22a73d382e20177b75148c5b04f7fcef740c54fa893e89",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "video": {
+        "width": 1440,
+        "height": 700,
+        "frames": 480,
+        "fps": "30/1",
+        "duration_seconds": 16.0,
+        "playback_speed": 1.0
+      }
+    },
+    {
+      "file": "images/supported-prone-frame.png",
+      "bytes": 214950,
+      "sha256": "ff4a270334d09d92a7581a07a56e47712485846d59d90dc626f0f646fc16aa5a",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "image": {
+        "width": 1440,
+        "height": 700,
+        "frames": 1
+      }
+    },
+    {
+      "file": "images/supported-prone-sequence.png",
+      "bytes": 333750,
+      "sha256": "af2a124e713d62e20edc36f93374454906cf442a5d7d072ec886b3f45ebea222",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "image": {
+        "width": 1440,
+        "height": 700,
+        "frames": 1
+      }
+    },
+    {
+      "file": "images/supported-prone-measurements.png",
+      "bytes": 218245,
+      "sha256": "3dbb3d62ec70d4cfbaacaf6bec0c5ad73863b85cd1cb9760027df24d3cd97b56",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "image": {
+        "width": 1800,
+        "height": 1650,
+        "frames": 1
+      }
+    },
+    {
+      "file": "videos/crouch-to-stand.mp4",
+      "bytes": 457048,
+      "sha256": "0c9295238787c58d4795f141e1a2009b67dbf1fcbc89261795b61c44b087dab7",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "video": {
+        "width": 1440,
+        "height": 700,
+        "frames": 480,
+        "fps": "30/1",
+        "duration_seconds": 16.0,
+        "playback_speed": 1.0
+      }
+    },
+    {
+      "file": "images/crouch-to-stand-sequence.png",
+      "bytes": 320304,
+      "sha256": "de203ea6e064e5e1383ecf56c8da489b09f78703427fc9fc5a487689e3556913",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "image": {
+        "width": 1440,
+        "height": 700,
+        "frames": 1
+      }
+    },
+    {
+      "file": "images/crouch-to-stand-measurements.png",
+      "bytes": 207310,
+      "sha256": "476691ea3da38d91c7d4f7d19e0716010869f91d2d9916b54d2520d6a3b48578",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "image": {
+        "width": 1800,
+        "height": 1650,
+        "frames": 1
+      }
+    },
+    {
+      "file": "previews/supported-prone-recovery.gif",
+      "bytes": 2799716,
+      "sha256": "9a2ba4e87cd69de21d408c6686f6cf8cacc74bb4af1e5f1286c32aada2ceff76",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "image": {
+        "width": 720,
+        "height": 350,
+        "frames": 120,
+        "duration_seconds": 12.0
+      }
+    },
+    {
+      "file": "previews/crouch-to-stand.gif",
+      "bytes": 1233174,
+      "sha256": "718eacfb4eb80795dd6a0356897a97e26380af26d4cccf85c2ebab40285a2624",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "image": {
+        "width": 720,
+        "height": 350,
+        "frames": 70,
+        "duration_seconds": 7.0
+      }
+    },
+    {
+      "file": "images/support-component-comparison.png",
+      "bytes": 224430,
+      "sha256": "f074c0e423f4e8c5e7ef46937082f7c2e4d69431097d7d7823492347776b55d0",
+      "language": "en",
+      "branding": "RETAILERWAY LLC",
+      "image": {
+        "width": 1800,
+        "height": 1200,
+        "frames": 1
       }
     }
   ],

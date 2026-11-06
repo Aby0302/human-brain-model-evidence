@@ -2,6 +2,10 @@
 
 **RETAILERWAY LLC — November 5–6, 2026**
 
+**Historical prototype:** this page preserves the earlier failed profile.
+The [newer supported-recovery experiment](supported-getup.md) passed its
+declared full-prone gates; its controller and results are documented separately.
+
 A separate human research body now has a moving neck, articulated trunk,
 self-collisions and measured head-contact screening. **Natural human walking
 and recovery are not yet qualified.** The physical prototype can step and

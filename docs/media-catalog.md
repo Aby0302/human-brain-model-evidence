@@ -2,6 +2,18 @@
 
 **RETAILERWAY LLC** · All current media use English labels and company stamps.
 
+## Supported human-body recovery — November 6
+
+| Recording | Duration / speed | Interpretation |
+| --- | --- | --- |
+| [Full prone recovery](../videos/supported-prone-recovery.mp4) | 16 s; 30 fps; 1× | Learned PPO residual + engineered measured-COM balance; seed47 body0 passes; primary48/48 |
+| [Crouch to stand](../videos/crouch-to-stand.mp4) | 16 s; 30 fps; 1× | Separate later-start lesson, NOT full prone recovery; primary48/48 |
+
+GIF excerpts preserve 1× timing: full recovery seconds1–13, crouch lesson1–8.
+The standalone sequences and measurements also identify the hybrid controller.
+[Results and matched zero-residual control](supported-getup.md) ·
+[Derived numerical summaries](../metadata/supported-getup.json).
+
 ## Articulated human experiment — November 6
 
 | Recording | Duration / speed | Interpretation |
